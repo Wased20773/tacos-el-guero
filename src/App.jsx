@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import './styles/App.css'
+import Header from '../src/miscellaneous/header.jsx'
 import HomePage from '../src/pages/homepage.jsx'
 import Menu from '../src/pages/menu.jsx'
 import Location from '../src/pages/location.jsx'
@@ -20,6 +21,8 @@ function App() {
   return (
     <>
       <div className='app-container'>
+      {/* Header (z-index 4-6) */}
+      <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/menu" element={<Menu />} />
@@ -28,17 +31,8 @@ function App() {
         <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
 
-      {/* {page === "homepage" ? (
-        <HomePage />
-      ) : page === "menu" ? (
-        <Menu />
-      ) : page == "location" ?
-      <Location />
-      : page == "about us" ?
-        <AboutUs />
-      : page == "contact us" ?
-        <ContactUs />
-      : null} */}
+      {/* Currently fixes page to keep footer at bottom */}
+      <div></div>
       <Footer />
 
       </div>
