@@ -18,18 +18,18 @@ function HomePage() {
         </div>
       </div>
       
-      {/* Landing Page image (z-index: 1-3)*/}
-      <div className="landing-page-image-container">
-        <div className="landing-page-image">
-          <img src="../src/imgs/hero-image.JPG" alt="Food Truck" />
+      {/* hero image (z-index: 1-3)*/}
+      <div className="hero-container">
+        <div className="hero-image">
+          <img src="../src/assets/imgs/hero-image.JPG" alt="Food Truck" />
         </div>
-        <div className="landing-page-cover"></div>
-        <div className="landing-page-content">
-          <div className="landing-page-title">Tacos El Guero</div>
+        <div className="hero-cover"></div>
+        <div className="hero-content">
+          <div className="hero-title">Tacos El Guero</div>
         </div>
       </div>
 
-      {/* below Landing Page image */}
+      {/* below hero image */}
       <div className="homepage-context-container">
         <div className="homepage-description-h2">Welcome to Our Food Truck!</div>
         <div className="homepage-description-p">Delicious food from Tacos El Guero. Your taste buds will thank you!</div>
@@ -39,22 +39,22 @@ function HomePage() {
       {/* Cards for header buttons */}
       <div className="homepage-cards-container">
         <div className="homepage-card">
-          <img className="homepage-card-image" src="../src/imgs/menu-tacos.JPG" alt="tacos on a plate"/>
+          <img className="homepage-card-image" src="../src/assets/imgs/menu-tacos.JPG" alt="tacos on a plate"/>
           <div className="homepage-card-background"></div>
           <div className="homepage-card-title">Menu</div>
         </div>
         <div className="homepage-card">
-          <img className="homepage-card-image" src="../src/imgs/location.jpg" alt="image of waypoint map"/>
+          <img className="homepage-card-image" src="../src/assets/imgs/location.jpg" alt="image of waypoint map"/>
           <div className="homepage-card-background"></div>
           <div className="homepage-card-title">Location</div>
         </div>
         <div className="homepage-card">
-          <img className="homepage-card-image" src="../src/imgs/about-us-image.JPG" alt="owner looking at customer from truck"/>
+          <img className="homepage-card-image" src="../src/assets/imgs/about-us-image.JPG" alt="owner looking at customer from truck"/>
           <div className="homepage-card-background"></div>
           <div className="homepage-card-title">About Us</div>
         </div>
         <div className="homepage-card">
-          <img className="homepage-card-image" src="../src/imgs/contact-us-image.jpg" alt="image of a telephone"/>
+          <img className="homepage-card-image" src="../src/assets/imgs/contact-us-image.jpg" alt="image of a telephone"/>
           <div className="homepage-card-background"></div>
           <div className="homepage-card-title">Contact Us</div>
         </div>
