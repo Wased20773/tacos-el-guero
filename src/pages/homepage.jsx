@@ -1,20 +1,25 @@
 import {useState} from "react"
+import { Link } from 'react-router-dom'
 import '../styles/App.css'
 import '../styles/Hero.css'
 import '../styles/HeaderButtons.css'
 import '../styles/HomePage.css'
+import { usePage } from '../context/PageProvider.jsx'
+
 
 function HomePage() {
+  const { setPage } = usePage();
+
   return (
     <div className="homepage-container">
       {/* Header (z-index 4-6) */}
       <div className="header-container">
         <div className="header-background"></div>
         <div className="header-buttons-group">
-          <input className="header-button-menu" type="button" value="Menu" />
-          <input className="header-button" type="button" value="Location" />
-          <input className="header-button" type="button" value="About Us" />
-          <input className="header-button" type="button" value="Contact Us" />
+          <Link to="/menu" className="header-button-menu">Menu</Link>
+          <Link to="/location" className="header-button">Location</Link>
+          <Link to="/about-us" className="header-button">About Us</Link>
+          <Link to="/contact-us" className="header-button">Contact Us</Link>
         </div>
       </div>
       

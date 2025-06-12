@@ -1,18 +1,16 @@
 import { usePage } from '../context/PageProvider.jsx'
 import { Link } from 'react-router-dom'
 
-function Menu() {
+function Location() {
     const { setPage } = usePage();
-
     return (
         <>
-            <div className="menu-container">
+            <div className="location-container">
                 <Link to="/" className="header-button-menu">Homepage</Link>
-                <div>Menu</div>
+                <div>Location</div>
             </div>
         </>
     )
 }
 
-export default Menu;
-// This is a placeholder for the Menu component.
+export default Location;
