@@ -46,12 +46,12 @@
 }
 
 @font-face {
-    font-family: 'Black-Radiant';
-    src: url('../src/fonts/Super Fashion.ttf');
+    font-family: 'Super-Fashion';
+    src: url('../src/assets/fonts/Super-Fashion.ttf');
 }
 
 .hero-title {
-    font-family: 'Black-Radiant';
+    font-family: 'Super-Fashion';
 
     font-size: 100px;
     color: white;
