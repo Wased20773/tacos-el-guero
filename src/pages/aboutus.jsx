@@ -1,8 +1,21 @@
 import { usePage } from '../context/PageProvider.jsx'
 import { Link } from 'react-router-dom'
+import { useEffect, useState } from 'react'
 import '../styles/AboutUs.css'
+
+const CardCarousel = [
+    '../src/assets/imgs/tacos-el-guero-nine-years-ago.jpg',
+    '../src/assets/imgs/tacos-el-guero-four-years-ago.jpg',
+    '../src/assets/imgs/tacos-el-guero-four-years-ago-inside.jpg'
+]
+
 function AboutUs() {
     const { setPage } = usePage();
+    const [ carouselIndex, setCarouselIndex ] = useState(0);
+
+    // useEffect(() => {
+    //     const interval = 
+    // })
 
     return (
         <>
@@ -45,11 +58,38 @@ function AboutUs() {
                     />
                 </div>
 
-                {/* About Business */}
-
+                <div className='about-me-content-seperator'>...</div>
 
                 {/* What was it like before 2016 - 2025 */}
-
+                <div className='about-me-history-carousel-container'>
+                    <div className="carousel-left-button" onClick={() => {
+                        setCarouselIndex((prev) => (prev - 1 + CardCarousel.length) % CardCarousel.length)
+                    }}>
+                        <div className='left-button'></div>
+                    </div>
+                    <div className='about-me-history-carousel-images'>
+                        <img className='about-me-history-image' src={CardCarousel[carouselIndex]} alt='taco truck image from past' width={"600px"} height={"400px"}></img>
+                    </div>
+                    <div className='about-me-history-cover'></div>
+                    <div className='about-me-history-text'>
+                        store text here.
+                    </div>
+                    <div className="carousel-right-button" onClick={() => {
+                        setCarouselIndex((prev) => (prev + 1) % CardCarousel.length)
+                    }}>
+                        <div className='right-button'></div>
+                    </div>
+                    
+                    <div className='about-me-image-index-group'>
+                        {CardCarousel.map((_, index) => (
+                            <div
+                            key={index}
+                            className={`about-me-image-index-dot ${carouselIndex === index ? 'active' : ''}`}
+                            onClick={() => setCarouselIndex(index)}
+                            ></div>
+                        ))}
+                        </div>
+                </div>
 
             </div>
         </>
