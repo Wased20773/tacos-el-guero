@@ -8,7 +8,7 @@ function ContactUs() {
     return (
         <>
             <div className='contact-us-container'>
-                <Link to="/" className="header-button-menu">HomePage</Link>
+                <Link to="/" className="header-button-menu">Homepage</Link>
                 <div>Contact Us</div>
             </div>
         </>

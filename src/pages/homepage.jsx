@@ -32,26 +32,26 @@ function HomePage() {
 
       {/* Cards for header buttons */}
       <div className="homepage-cards-container">
-        <div className="homepage-card">
+        <Link to="/menu" className="homepage-card">
           <img className="homepage-card-image" src="../src/assets/imgs/menu-tacos.JPG" alt="tacos on a plate"/>
           <div className="homepage-card-background"></div>
           <div className="homepage-card-title">Menu</div>
-        </div>
-        <div className="homepage-card">
+        </Link>
+        <Link to="/location" className="homepage-card">
           <img className="homepage-card-image" src="../src/assets/imgs/location.jpg" alt="image of waypoint map"/>
           <div className="homepage-card-background"></div>
           <div className="homepage-card-title">Location</div>
-        </div>
-        <div className="homepage-card">
+        </Link>
+        <Link to="/about-us" className="homepage-card">
           <img className="homepage-card-image" src="../src/assets/imgs/about-us-image.JPG" alt="owner looking at customer from truck"/>
           <div className="homepage-card-background"></div>
           <div className="homepage-card-title">About Us</div>
-        </div>
-        <div className="homepage-card">
+        </Link>
+        <Link to="/contact-us" className="homepage-card">
           <img className="homepage-card-image" src="../src/assets/imgs/contact-us-image.jpg" alt="image of a telephone"/>
           <div className="homepage-card-background"></div>
           <div className="homepage-card-title">Contact Us</div>
-        </div>
+        </Link>
         
       </div>
     </div>
