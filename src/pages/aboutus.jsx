@@ -68,7 +68,21 @@ function AboutUs() {
                         <div className='left-button'></div>
                     </div>
                     <div className='about-me-history-carousel-images'>
-                        <img className='about-me-history-image' src={CardCarousel[carouselIndex]} alt='taco truck image from past' width={"600px"} height={"400px"}></img>
+                        <div
+                            className='carousel-image-strip'
+                            style={{ transform: `translateX(-${carouselIndex * 100}%)`}}
+                        >
+                            {CardCarousel.map((img, index) => (
+                                <img 
+                                    key={index}
+                                    className='carousel-image'
+                                    src={img}
+                                    alt={`carousel image ${index}`}
+                                    width={"900"}
+                                    height={"500"}
+                                />
+                            ))}
+                        </div>
                     </div>
                     <div className='about-me-history-cover'></div>
                     <div className='about-me-history-text'>
