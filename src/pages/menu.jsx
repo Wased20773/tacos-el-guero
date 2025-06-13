@@ -8,7 +8,7 @@ function Menu() {
     return (
         <>
             <div className="menu-container">
-                <Link to="/" className="header-button-menu">Homepage</Link>
+                {/* <Link to="/" className="header-button-menu">Homepage</Link> */}
                 <div>Menu</div>
             </div>
         </>

@@ -1,3 +1,29 @@
-.about-us-container {
-    margin-top: 100px;
+.about-me-card {
+    /* border: 1px solid red; */
+
+    width: 800px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+
+    border-radius: 1rem;
+
+}
+
+.about-me-image-left {
+    border-radius: 45% 25% 66% 25%;
+}
+.about-me-image-right {
+    border-radius: 25% 45% 25% 66%;
+}
+
+
+.about-me-article-container {
+    /* border: 1px solid blue; */
+}
+
+.about-me-article-text {
+    font-size: 20px;
 }

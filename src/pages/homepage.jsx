@@ -26,7 +26,7 @@ function HomePage() {
       {/* below hero image */}
       <div className="homepage-context-container">
         <div className="homepage-description-h2">Welcome to Our Food Truck!</div>
-        <div className="homepage-description-p">Delicious food from Tacos El Guero. Your taste buds will thank you!</div>
+        <div className="homepage-description-p">Delicious Mexican foods from Tacos El Guero. Your taste buds will thank you!</div>
         <div className="homepage-description-p">You can find more about us below</div>
       </div>
 
