@@ -1,152 +1,175 @@
 .about-me-card {
-    /* border: 1px solid red; */
+  /* border: 1px solid red; */
 
-    width: 800px;
+  width: 800px;
 
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
 
-    border-radius: 1rem;
-
+  border-radius: 1rem;
 }
 
 .about-me-image-left {
-    border-radius: 45% 25% 66% 25%;
-    border-bottom: 5px solid rgba(0,0,0, 0.5);
+  border-radius: 45% 25% 66% 25%;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.5);
 }
 .about-me-image-right {
-    border-radius: 25% 45% 25% 66%;
-    border-bottom: 5px solid rgba(0,0,0, 0.5);
+  border-radius: 25% 45% 25% 66%;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.5);
 }
 
-
 .about-me-article-container {
-    /* border: 1px solid blue; */
+  /* border: 1px solid blue; */
 }
 
 .about-me-article-text {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .about-me-content-seperator {
-    font-size: 50px;
-    margin-bottom: 30px;
+  font-size: 50px;
+  margin-bottom: 30px;
 }
 
 .about-me-history-carousel-container {
+  border-radius: 0.5cm;
+  width: 900px;
+  height: 500px;
 
-    border-radius: 0.5cm;
-    width: 900px;
-    height: 500px;
-
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
 }
 
 .about-me-history-carousel-images {
-    grid-area: 1/1;
-    z-index: 1;
-    overflow: hidden;
-    width: 900px;
-    height: 500px;
+  grid-area: 1/1;
+  z-index: 1;
+  overflow: hidden;
+  width: 900px;
+  height: 500px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    border-radius: 0.5cm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5cm;
 }
 
 .carousel-image-strip {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 100%;
-    height: 100%;
-    border-radius: 0.5cm;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5cm;
 }
 
 .carousel-image {
-    min-width: 900px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 0.5cm;
+  min-width: 900px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 0.5cm;
 }
 
 .about-me-history-cover {
-    background-color: black;
-    border-radius: 0.5cm;
-    opacity: 0.35;
+  background-color: black;
+  border-radius: 0.5cm;
+  opacity: 0.5;
 
-    grid-area: 1/1;
-    z-index: 2;
+  grid-area: 1/1;
+  z-index: 2;
 }
 
+.about-me-history-text-wrapper {
+  grid-area: 1/1;
+  z-index: 3;
+  overflow: hidden;
+  width: 900px;
+  height: 500px;
+}
+
+.about-me-history-text-strip {
+  display: flex;
+  transition: 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
+  grid-area: 1/1;
+  z-index: 3;
+}
+
+.about-me-history-text-container {
+  flex: 0 0 100%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  color: white;
+}
+
+.about-me-history-text-h2 {
+  font-size: 45px;
+  margin-top: 45px;
+}
 .about-me-history-text {
-    grid-area: 1/1;
-    z-index: 3;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: white;
-    font-size: 20px;
+  font-size: 20px;
+  height: 100%;
+  margin: 0 100px 108px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel-left-button {
-    grid-area: 1/1;
+  grid-area: 1/1;
 
-    z-index: 4;
-    margin-top: 225px;
-    margin-left: 10px;
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    border-radius: 50%;
-    transition: 0.3s;
+  z-index: 4;
+  margin-top: 225px;
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
 }
 
 .left-button {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 
-    clip-path: polygon(60% 0, 50% 50%, 60% 100%, 0 50%);
-    scale: 0.5;
-    background-color: black;
+  clip-path: polygon(60% 0, 50% 50%, 60% 100%, 0 50%);
+  scale: 0.5;
+  background-color: black;
 }
 
 .right-button {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 
-    /* clip-path: polygon(60% 0, 50% 50%, 60% 100%, 0 50%); */
-    clip-path: polygon(40% 0, 100% 50%, 40% 100%, 50% 50%);
-    scale: 0.5;
-    background-color: black;
+  /* clip-path: polygon(60% 0, 50% 50%, 60% 100%, 0 50%); */
+  clip-path: polygon(40% 0, 100% 50%, 40% 100%, 50% 50%);
+  scale: 0.5;
+  background-color: black;
 }
 
-
 .carousel-right-button {
-    grid-area: 1/1;
+  grid-area: 1/1;
 
-    z-index: 4;
-    margin-top: 225px;
-    margin-left: 840px;
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    border-radius: 50%;
-    transition: 0.3s;
+  z-index: 4;
+  margin-top: 225px;
+  margin-left: 840px;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
 }
 
 .carousel-left-button:hover,
 .carousel-right-button:hover {
-    transition: 0.3s;
-    background-color: grey;
-    cursor: pointer;
+  transition: 0.3s;
+  background-color: grey;
+  cursor: pointer;
 }
 
 .about-me-image-index-group {
