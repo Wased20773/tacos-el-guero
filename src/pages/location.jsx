@@ -1,8 +1,7 @@
-import { usePage } from '../context/PageProvider.jsx'
 import { Link } from 'react-router-dom'
 import "../styles/Location.css"
 function Location() {
-    const { setPage } = usePage();
+    
     return (
         <>
             <div className="location-container">

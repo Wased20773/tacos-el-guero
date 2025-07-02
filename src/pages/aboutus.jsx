@@ -1,4 +1,3 @@
-import { usePage } from "../context/PageProvider.jsx";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "../styles/AboutUs.css";
@@ -22,7 +21,6 @@ const CardCarousel = [
 ];
 
 function AboutUs() {
-  const { setPage } = usePage();
   const [carouselIndex, setCarouselIndex] = useState(0);
 
   // useEffect(() => {

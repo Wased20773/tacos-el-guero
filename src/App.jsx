@@ -8,15 +8,8 @@ import Location from '../src/pages/location.jsx'
 import AboutUs from '../src/pages/aboutus.jsx'
 import ContactUs from '../src/pages/contactus.jsx'
 import Footer from '../src/miscellaneous/Footer.jsx'
-import {usePage} from '../src/context/PageProvider.jsx'
 
 function App() {
-  const {page} = usePage();
-
-  // For testing purposes
-  useEffect(() => {
-    console.log("Current page:", page);
-  } , [page]);
   
   return (
     <>

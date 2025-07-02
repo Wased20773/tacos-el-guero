@@ -1,10 +1,7 @@
-import { usePage } from '../context/PageProvider.jsx'
 import { Link } from 'react-router-dom'
 import "../styles/ContactUs.css"
 
 function ContactUs() {
-    const { setPage } = usePage();
-
     return (
         <>
             <div className='contact-us-container'>

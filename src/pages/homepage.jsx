@@ -4,11 +4,8 @@ import '../styles/App.css'
 import '../styles/Hero.css'
 import '../styles/HeaderButtons.css'
 import '../styles/HomePage.css'
-import { usePage } from '../context/PageProvider.jsx'
-
 
 function HomePage() {
-  const { setPage } = usePage();
 
   return (
     <div className="homepage-container">
