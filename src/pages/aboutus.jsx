@@ -2,19 +2,26 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "../styles/AboutUs.css";
 
+import ChefPhotopng from "../assets/imgs/chef-template-photo.png"
+import ChefAssistantPhotojpg from "../assets/imgs/chef-assistant-template-photo.jpg"
+
+import CardCarouselOnejpg from "../assets/imgs/tacos-el-guero-nine-years-ago.jpg"
+import CardCarouselTwojpg from "../assets/imgs/tacos-el-guero-four-years-ago.jpg"
+import CardCarouselThreejpg from "../assets/imgs/tacos-el-guero-four-years-ago-inside.jpg"
+
 const CardCarousel = [
   {
-    img: "../src/assets/imgs/tacos-el-guero-nine-years-ago.jpg",
+    img: CardCarouselOnejpg,
     h2: "2011",
     text: "Getting a new truck for the business",
   },
   {
-    img: "../src/assets/imgs/tacos-el-guero-four-years-ago.jpg",
+    img: CardCarouselTwojpg,
     h2: "2021",
     text: "Made home for customers to eat indoors in harsh weathers",
   },
   {
-    img: "../src/assets/imgs/tacos-el-guero-four-years-ago-inside.jpg",
+    img: CardCarouselThreejpg,
     h2: "2021",
     text: "Inside view of the built home",
   },
@@ -22,10 +29,6 @@ const CardCarousel = [
 
 function AboutUs() {
   const [carouselIndex, setCarouselIndex] = useState(0);
-
-  // useEffect(() => {
-  //     const interval =
-  // })
 
   return (
     <>
@@ -36,7 +39,7 @@ function AboutUs() {
         <div className="about-me-card">
           <img
             className="about-me-image-left"
-            src="../src/assets/imgs/chef-template-photo.png"
+            src={ChefPhotopng}
             alt="chef looking at camera smiling with glass wines infront of shot"
             width={"300px"}
           />
@@ -63,7 +66,7 @@ function AboutUs() {
           </div>
           <img
             className="about-me-image-right"
-            src="../src/assets/imgs/chef-assistant-template-photo.jpg"
+            src={ChefAssistantPhotojpg}
             alt="chef assistant looking at camera smiling with her arms holding each other near her chest"
             width={"300px"}
           />

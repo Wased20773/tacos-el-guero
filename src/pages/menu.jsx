@@ -1,5 +1,15 @@
 import { Link } from 'react-router-dom'
 import '../styles/Menu.css'
+import OrderOneJPG from '../assets/imgs/order-one.avif'
+import OrderTwoJPG from '../assets/imgs/order-two.JPG'
+import OrderThreeJPG from '../assets/imgs/order-three.JPG'
+import OrderFourJPG from '../assets/imgs/order-four.JPG'
+import OrderFiveJPG from '../assets/imgs/order-five.JPG'
+// import OrderSixJPG from '../assets/imgs/order-six.JPG'
+import OrderSevenJPG from '../assets/imgs/order-seven.JPG'
+import OrderEightJPG from '../assets/imgs/order-eight.JPG'
+import OrderNineJPG from '../assets/imgs/order-nine.JPG'
+import OrderTenJPG from '../assets/imgs/order-ten.JPG'
 
 function Menu() {
     return (
@@ -164,27 +174,27 @@ function Menu() {
                     <div className="menu-h3">Order Numbers</div>
                     <div className='menu-order-numbers-inner-container'>
                         <Link to="/menu/order-one" className="menu-order-card">
-                            <img src="../../src/assets/imgs/order-one.JPG" className="menu-order-card-image" width={"150px"} height={"150px"}></img>
+                            <img src={OrderOneJPG} className="menu-order-card-image" width={"150px"} height={"150px"}></img>
                             <div className="menu-order-card-background"></div>
                             <div className="menu-order-card-title">#1</div>
                         </Link>
                         <Link to="/menu/order-two" className="menu-order-card">
-                            <img src="../../src/assets/imgs/order-two.JPG" className="menu-order-card-image" width={"150px"} height={"150px"}></img>
+                            <img src={OrderTwoJPG} className="menu-order-card-image" width={"150px"} height={"150px"}></img>
                             <div className="menu-order-card-background"></div>
                             <div className="menu-order-card-title">#2</div>
                         </Link>
                         <Link to="/menu/order-three" className="menu-order-card" >
-                            <img src="../../src/assets/imgs/order-three.JPG" className="menu-order-card-image" width={"150px"} height={"150px"}></img>
+                            <img src={OrderThreeJPG} className="menu-order-card-image" width={"150px"} height={"150px"}></img>
                             <div className="menu-order-card-background"></div>
                             <div className="menu-order-card-title">#3</div>
                         </Link>
                         <Link to="/menu/order-four" className="menu-order-card">
-                            <img src="../../src/assets/imgs/order-four.JPG" className="menu-order-card-image" width={"150px"} height={"150px"}></img>
+                            <img src={OrderFourJPG} className="menu-order-card-image" width={"150px"} height={"150px"}></img>
                             <div className="menu-order-card-background"></div>
                             <div className="menu-order-card-title">#4</div>
                         </Link>
                         <Link to="/menu/order-five" className="menu-order-card">
-                            <img src="../../src/assets/imgs/order-five.JPG" className="menu-order-card-image" width={"150px"} height={"150px"}></img>
+                            <img src={OrderFiveJPG} className="menu-order-card-image" width={"150px"} height={"150px"}></img>
                             <div className="menu-order-card-background"></div>
                             <div className="menu-order-card-title">#5</div>
                         </Link>
@@ -194,22 +204,22 @@ function Menu() {
                             <div className="menu-order-card-title">#6</div>
                         </Link>
                         <Link to="/menu/order-seven" className="menu-order-card">
-                            <img src="../../src/assets/imgs/order-seven.JPG" className="menu-order-card-image" width={"150px"} height={"150px"}></img>
+                            <img src={OrderSevenJPG} className="menu-order-card-image" width={"150px"} height={"150px"}></img>
                             <div className="menu-order-card-background"></div>
                             <div className="menu-order-card-title">#7</div>
                         </Link>
                         <Link to="/menu/order-eight" className="menu-order-card">
-                            <img src="../../src/assets/imgs/order-eight.JPG" className="menu-order-card-image" width={"150px"} height={"150px"}></img>
+                            <img src={OrderEightJPG} className="menu-order-card-image" width={"150px"} height={"150px"}></img>
                             <div className="menu-order-card-background"></div>
                             <div className="menu-order-card-title">#8</div>
                         </Link>
                         <Link to="/menu/order-nine" className="menu-order-card">
-                            <img src="../../src/assets/imgs/order-nine.JPG" className="menu-order-card-image" width={"150px"} height={"150px"}></img>
+                            <img src={OrderNineJPG} className="menu-order-card-image" width={"150px"} height={"150px"}></img>
                             <div className="menu-order-card-background"></div>
                             <div className="menu-order-card-title">#9</div>
                         </Link>
                         <Link to="/menu/order-ten" className="menu-order-card">
-                            <img src="../../src/assets/imgs/order-ten.JPG" className="menu-order-card-image" width={"150px"} height={"150px"}></img>
+                            <img src={OrderTenJPG} className="menu-order-card-image" width={"150px"} height={"150px"}></img>
                             <div className="menu-order-card-background"></div>
                             <div className="menu-order-card-title">#10</div>
                         </Link>
