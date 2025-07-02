@@ -1,0 +1,37 @@
+/* .menu-container {} */
+
+.custome-order-container {
+    /* border: 1px solid black; */
+    width: 550px; /* Subject to change */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.custome-order-h2 {
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+
+}
+
+.menu-price-container {
+    border: 2px solid black;
+    border-radius: 0.25cm;
+    padding: 20px;
+    /* background-color: red; */
+
+}
+
+.menu-h3 {
+    border-bottom: 3px solid black;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.menu-price {
+    display: flex;
+    justify-content: space-between;
+}
+
