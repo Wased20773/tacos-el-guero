@@ -8,7 +8,7 @@ function Menu() {
                 <div>Menu</div>
 
                 <div className="custome-order-container">
-                    <div className="custome-order-h2">Tacos with onion & cilantro</div>
+                    <div className="menu-h2">Tacos with onion & cilantro</div>
 
                     <div className="menu-price-container">
                         <div className="menu-h3">Meat</div>
@@ -101,70 +101,118 @@ function Menu() {
                             <div>$ 3.75</div>
                         </div>
                     </div>
+                </div>
 
+                <div className="custome-order-container">
+                    <div className="menu-h2 menu-drinks-header">Drinks</div>
+
+                    <div className="menu-price-container">
+                        <div className="menu-h3">Cans</div>
+                        <div className="menu-price">
+                            <div>Coke</div>
+                            <div>$ 2.00</div>
+                        </div>
+                        <div className="menu-price">
+                            <div>Fanta</div>
+                            <div>$ 2.00</div>
+                        </div>
+                        <div className="menu-price">
+                            <div>Sprite</div>
+                            <div>$ 2.00</div>
+                        </div>
+                        <div className="menu-price">
+                            <div>Moutain Dew</div>
+                            <div>$ 2.00</div>
+                        </div>
+                        <div className="menu-price">
+                            <div>Pepsi</div>
+                            <div>$ 2.00</div>
+                        </div>
+                        <div className="menu-price">
+                            <div>Diet Coke</div>
+                            <div>$ 2.00</div>
+                        </div>
+                        <div className="menu-h3">Bottles</div>
+                        <div className="menu-price">
+                            <div>Coke</div>
+                            <div>$ 5.00</div>
+                        </div>
+                        <div className="menu-price">
+                            <div>Mandarin</div>
+                            <div>$ 4.00</div>
+                        </div>
+                        <div className="menu-price">
+                            <div>Tamarind</div>
+                            <div>$ 4.00</div>
+                        </div>
+                        <div className="menu-price">
+                            <div>Pinapple</div>
+                            <div>$ 4.00</div>
+                        </div>
+                        <div className="menu-price">
+                            <div>Apple</div>
+                            <div>$ 4.00</div>
+                        </div>
+                        <div className="menu-price">
+                            <div>Sangria</div>
+                            <div>$ 4.00</div>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="menu-order-numbers-container">
-                    <div>Order Numbers</div>
-                    <Link to="/menu/order-one">
-                        <img className="menu-card-image"></img>
-                        <div className="menu-card-background"></div>
-                        <div className="menu-card-title">#1</div>
-                    </Link>
-                    <Link to="/menu/order-two">
-                        <img className="menu-card-image"></img>
-                        <div className="menu-card-background"></div>
-                        <div className="menu-card-title">#2</div>
-                    </Link>
-                    <Link to="/menu/order-three">
-                        <img className="menu-card-image"></img>
-                        <div className="menu-card-background"></div>
-                        <div className="menu-card-title">#3</div>
-                    </Link>
-                    <Link to="/menu/order-four">
-                        <img className="menu-card-image"></img>
-                        <div className="menu-card-background"></div>
-                        <div className="menu-card-title">#4</div>
-                    </Link>
-                    <Link to="/menu/order-five">
-                        <img className="menu-card-image"></img>
-                        <div className="menu-card-background"></div>
-                        <div className="menu-card-title">#5</div>
-                    </Link>
-                    <Link to="/menu/order-six">
-                        <img className="menu-card-image"></img>
-                        <div className="menu-card-background"></div>
-                        <div className="menu-card-title">#6</div>
-                    </Link>
-                    <Link to="/menu/order-seven">
-                        <img className="menu-card-image"></img>
-                        <div className="menu-card-background"></div>
-                        <div className="menu-card-title">#7</div>
-                    </Link>
-                    <Link to="/menu/order-eight">
-                        <img className="menu-card-image"></img>
-                        <div className="menu-card-background"></div>
-                        <div className="menu-card-title">#8</div>
-                    </Link>
-                    <Link to="/menu/order-nine">
-                        <img className="menu-card-image"></img>
-                        <div className="menu-card-background"></div>
-                        <div className="menu-card-title">#9</div>
-                    </Link>
-                    <Link to="/menu/order-ten">
-                        <img className="menu-card-image"></img>
-                        <div className="menu-card-background"></div>
-                        <div className="menu-card-title">#10</div>
-                    </Link>
-                </div>
-
-                <div className="menu-drinks-conatiner">
-                    <div className="menu-drinks-cans">
-                        
-                    </div>
-
-                    <div className="menu-drinks-glass">
-
+                    <div className="menu-h3">Order Numbers</div>
+                    <div className='menu-order-numbers-inner-container'>
+                        <Link to="/menu/order-one" className="menu-order-card">
+                            <img src="../../src/assets/imgs/order-one.JPG" className="menu-order-card-image" width={"150px"} height={"150px"}></img>
+                            <div className="menu-order-card-background"></div>
+                            <div className="menu-order-card-title">#1</div>
+                        </Link>
+                        <Link to="/menu/order-two" className="menu-order-card">
+                            <img src="../../src/assets/imgs/order-two.JPG" className="menu-order-card-image" width={"150px"} height={"150px"}></img>
+                            <div className="menu-order-card-background"></div>
+                            <div className="menu-order-card-title">#2</div>
+                        </Link>
+                        <Link to="/menu/order-three" className="menu-order-card" >
+                            <img src="../../src/assets/imgs/order-three.JPG" className="menu-order-card-image" width={"150px"} height={"150px"}></img>
+                            <div className="menu-order-card-background"></div>
+                            <div className="menu-order-card-title">#3</div>
+                        </Link>
+                        <Link to="/menu/order-four" className="menu-order-card">
+                            <img src="../../src/assets/imgs/order-four.JPG" className="menu-order-card-image" width={"150px"} height={"150px"}></img>
+                            <div className="menu-order-card-background"></div>
+                            <div className="menu-order-card-title">#4</div>
+                        </Link>
+                        <Link to="/menu/order-five" className="menu-order-card">
+                            <img src="../../src/assets/imgs/order-five.JPG" className="menu-order-card-image" width={"150px"} height={"150px"}></img>
+                            <div className="menu-order-card-background"></div>
+                            <div className="menu-order-card-title">#5</div>
+                        </Link>
+                        <Link to="/menu/order-six" className="menu-order-card">
+                            <img className="menu-order-card-image" width={"150px"} height={"150px"}></img>
+                            <div className="menu-order-card-background"></div>
+                            <div className="menu-order-card-title">#6</div>
+                        </Link>
+                        <Link to="/menu/order-seven" className="menu-order-card">
+                            <img src="../../src/assets/imgs/order-seven.JPG" className="menu-order-card-image" width={"150px"} height={"150px"}></img>
+                            <div className="menu-order-card-background"></div>
+                            <div className="menu-order-card-title">#7</div>
+                        </Link>
+                        <Link to="/menu/order-eight" className="menu-order-card">
+                            <img src="../../src/assets/imgs/order-eight.JPG" className="menu-order-card-image" width={"150px"} height={"150px"}></img>
+                            <div className="menu-order-card-background"></div>
+                            <div className="menu-order-card-title">#8</div>
+                        </Link>
+                        <Link to="/menu/order-nine" className="menu-order-card">
+                            <img src="../../src/assets/imgs/order-nine.JPG" className="menu-order-card-image" width={"150px"} height={"150px"}></img>
+                            <div className="menu-order-card-background"></div>
+                            <div className="menu-order-card-title">#9</div>
+                        </Link>
+                        <Link to="/menu/order-ten" className="menu-order-card">
+                            <img src="../../src/assets/imgs/order-ten.JPG" className="menu-order-card-image" width={"150px"} height={"150px"}></img>
+                            <div className="menu-order-card-background"></div>
+                            <div className="menu-order-card-title">#10</div>
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -1,14 +1,17 @@
 /* .menu-container {} */
+:root {
+    --menu-width-desktop: 550px; /* Subject to change */
+    --back-button-margin-space: 10px;
+}
 
 .custome-order-container {
-    /* border: 1px solid black; */
-    width: 550px; /* Subject to change */
+    width: var(--menu-width-desktop);
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.custome-order-h2 {
+.menu-h2 {
     width: 100%;
     text-align: center;
     text-decoration: underline;
@@ -17,11 +20,10 @@
 }
 
 .menu-price-container {
+    /* width: 100%; */
     border: 3px solid black;
     border-radius: 0.25cm;
     padding: 20px;
-    /* background-color: red; */
-
 }
 
 .menu-h3 {
@@ -36,5 +38,122 @@
 }
 
 .menu-order-numbers-container {
+    width: var(--menu-width-desktop);
+}
+
+.menu-order-numbers-inner-container {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.menu-order-card {
+    width: 150px;
+    height: 150px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+
+    border-radius: 0.25cm;
+    text-decoration: none;
+    margin: none;
+    padding: none;
+
+    transition: 0.5s;
+}
+
+.menu-order-card-image {
+    grid-area: 1/1;
+    z-index: 1;
+
+    border-radius: 0.25cm;
+}
+
+.menu-order-card-background {
+    grid-area: 1/1;
+    z-index: 2;
+
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 0.25cm;
+
+    transition: 0.5s;
+}
+
+.menu-order-card-title {
+    grid-area: 1/1;
+    z-index: 3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    rotate: -15deg;
+}
+
+.menu-order-card:hover {
+    transition: 0.5s;
+    
+    transform: scale(1.10);
+    cursor: pointer;
+}
+
+.menu-order-card:hover .menu-order-card-background {
+    transition: 0.5s;
+    opacity: 0.70;
+}
+
+.menu-h2-order-description {
+    margin-top: -20px;
+    text-align: center;
+}
+
+.back-button {
+    width: 50px;
+    height: 50px;
+
+    text-decoration: none;
+    border-radius: 0.25cm;
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.5s;
+}
+
+.back-button.top {
+    margin-bottom: var(--back-button-margin-space);
+}
+
+.back-button.bottom {
+    margin-top: var(--back-button-margin-space);
+}
+
+.back-button-arrow {
+    width: 35%;
+    height: 45%;
     background-color: red;
+
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0 50%);
+
+    transition: 0.5s;
+}
+
+.back-button:hover .back-button-arrow {
+    transition: 0.5s;
+    transform: scale(1.5);
+}
+
+.back-button:hover {
+    transition: 0.5s;
+    background-color: rgb(218, 218, 218);
+}
+
+.menu-drinks-header {
+    margin-top: 15px;
 }
