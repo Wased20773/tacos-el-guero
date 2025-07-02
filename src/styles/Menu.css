@@ -17,7 +17,7 @@
 }
 
 .menu-price-container {
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 0.25cm;
     padding: 20px;
     /* background-color: red; */
@@ -35,3 +35,6 @@
     justify-content: space-between;
 }
 
+.menu-order-numbers-container {
+    background-color: red;
+}

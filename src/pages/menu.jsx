@@ -105,7 +105,57 @@ function Menu() {
                 </div>
 
                 <div className="menu-order-numbers-container">
-                    {/* Place container of cards with all 10 orders */}
+                    <div>Order Numbers</div>
+                    <Link to="/menu/order-one">
+                        <img className="menu-card-image"></img>
+                        <div className="menu-card-background"></div>
+                        <div className="menu-card-title">#1</div>
+                    </Link>
+                    <Link to="/menu/order-two">
+                        <img className="menu-card-image"></img>
+                        <div className="menu-card-background"></div>
+                        <div className="menu-card-title">#2</div>
+                    </Link>
+                    <Link to="/menu/order-three">
+                        <img className="menu-card-image"></img>
+                        <div className="menu-card-background"></div>
+                        <div className="menu-card-title">#3</div>
+                    </Link>
+                    <Link to="/menu/order-four">
+                        <img className="menu-card-image"></img>
+                        <div className="menu-card-background"></div>
+                        <div className="menu-card-title">#4</div>
+                    </Link>
+                    <Link to="/menu/order-five">
+                        <img className="menu-card-image"></img>
+                        <div className="menu-card-background"></div>
+                        <div className="menu-card-title">#5</div>
+                    </Link>
+                    <Link to="/menu/order-six">
+                        <img className="menu-card-image"></img>
+                        <div className="menu-card-background"></div>
+                        <div className="menu-card-title">#6</div>
+                    </Link>
+                    <Link to="/menu/order-seven">
+                        <img className="menu-card-image"></img>
+                        <div className="menu-card-background"></div>
+                        <div className="menu-card-title">#7</div>
+                    </Link>
+                    <Link to="/menu/order-eight">
+                        <img className="menu-card-image"></img>
+                        <div className="menu-card-background"></div>
+                        <div className="menu-card-title">#8</div>
+                    </Link>
+                    <Link to="/menu/order-nine">
+                        <img className="menu-card-image"></img>
+                        <div className="menu-card-background"></div>
+                        <div className="menu-card-title">#9</div>
+                    </Link>
+                    <Link to="/menu/order-ten">
+                        <img className="menu-card-image"></img>
+                        <div className="menu-card-background"></div>
+                        <div className="menu-card-title">#10</div>
+                    </Link>
                 </div>
 
                 <div className="menu-drinks-conatiner">
@@ -117,7 +167,6 @@ function Menu() {
 
                     </div>
                 </div>
-
             </div>
         </>
     )
