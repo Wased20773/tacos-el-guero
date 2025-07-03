@@ -1,0 +1,62 @@
+.pin-icon-svg {
+    /* TODO: Add for mobile view */
+
+    padding-bottom: 30px;
+}
+
+.clock-icon-svg {
+    /* TODO: Add for mobile view */
+
+    padding-bottom: 30px;
+}
+
+.location-p {
+    font-size: 16px;
+}
+
+.location-p-map {
+    padding: 15px 0 15px;
+    width: 70%;
+    border-radius: 0.25cm;
+    background: white;
+    text-align: center;
+    text-decoration: none;
+    color: blue;
+    transition: 0.5s;
+}
+.location-p-map:hover {
+    transition: 0.5s;
+    background: rgb(211, 211, 211);
+}
+
+.location-h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.location-group-section {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.location-section {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location-group-seperator {
+    margin-top: 50px;
+    margin-bottom: -50px;
+    border: 1px solid black;
+}
+
+.location-day {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
