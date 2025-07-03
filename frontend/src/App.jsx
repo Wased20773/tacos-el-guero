@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import axios from "axios";
-import { Routes, Route, useLocation } from 'react-router-dom'
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom'
 import './styles/App.css'
 import Header from './miscellaneous/header.jsx'
 import HomePage from './pages/homepage.jsx'
@@ -25,15 +25,14 @@ const validRoutePaths = [
   "/", "/menu", "/menu/order-one", "/menu/order-two", "/menu/order-three",
   "/menu/order-four", "/menu/order-five", "/menu/order-six",
   "/menu/order-seven", "/menu/order-eight", "/menu/order-nine",
-  "/menu/order-ten", "/location", "/about-us", "/contact-us"
+  "/menu/order-ten", "/location", "/about-us", "/contact-us", "/not-found"
 ];
 
-
 function App() {
-  const [ notFound, setNotFound ] = useState(false)
   const location = useLocation();
-  const isValidPath = validRoutePaths.includes(location.pathname);
+  const isValidPath = location.pathname !== "/not-found";
 
+  console.log(location.pathname);
   const fetchAPI = async () => {
     const response = await axios.get("http://localhost:8080/api");
     console.log(response.data.fruits)
@@ -68,7 +67,8 @@ function App() {
         <Route path="/location" element={<Location />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact-us" element={<ContactUs />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/not-found" element={<NotFound />} />
+        <Route path="*" element={<Navigate to="/not-found" replace />} />
       </Routes>
 
       {/* Currently fixes page to keep footer at bottom */}
