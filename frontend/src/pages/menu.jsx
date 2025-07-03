@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import '../styles/Menu.css'
-import OrderOneJPG from '../assets/imgs/order-one.avif'
+import OrderOneJPG from '../assets/imgs/order-one.JPG'
 import OrderTwoJPG from '../assets/imgs/order-two.JPG'
 import OrderThreeJPG from '../assets/imgs/order-three.JPG'
 import OrderFourJPG from '../assets/imgs/order-four.JPG'

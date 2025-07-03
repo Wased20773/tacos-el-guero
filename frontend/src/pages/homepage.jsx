@@ -4,11 +4,11 @@ import '../styles/App.css'
 import '../styles/Hero.css'
 import '../styles/HeaderButtons.css'
 import '../styles/HomePage.css'
-import HeroJPG from "../assets/imgs/hero-image.JPG"
-import MenuJPG from '../assets/imgs/menu-tacos.JPG'
-import Locationjpg from '../assets/imgs/location.jpg'
-import AboutUsJPG from '../assets/imgs/about-us-image.JPG'
-import ContactUsjpg from '../assets/imgs/contact-us-image.jpg'
+import HeroJPG from "../assets/hero-image.JPG"
+import MenuJPG from '../assets/menu-tacos.JPG'
+import Locationjpg from '../assets/location.jpg'
+import AboutUsJPG from '../assets/about-us-image.JPG'
+import ContactUsjpg from '../assets/contact-us-image.jpg'
 
 function HomePage() {
 
