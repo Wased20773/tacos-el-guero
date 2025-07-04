@@ -15,6 +15,7 @@
 }
 
 .location-p-map {
+    /* TODO: Change style to fit better with surroundings */
     padding: 15px 0 15px;
     width: 70%;
     border-radius: 0.25cm;

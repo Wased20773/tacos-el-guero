@@ -176,52 +176,52 @@ function Menu() {
                         <Link to="/menu/order-one" className="menu-order-card">
                             <img src={OrderOneJPG} className="menu-order-card-image" width={"150px"} height={"150px"}></img>
                             <div className="menu-order-card-background"></div>
-                            <div className="menu-order-card-title">#1</div>
+                            <div className="menu-order-card-title">Order 1</div>
                         </Link>
                         <Link to="/menu/order-two" className="menu-order-card">
                             <img src={OrderTwoJPG} className="menu-order-card-image" width={"150px"} height={"150px"}></img>
                             <div className="menu-order-card-background"></div>
-                            <div className="menu-order-card-title">#2</div>
+                            <div className="menu-order-card-title">Order 2</div>
                         </Link>
                         <Link to="/menu/order-three" className="menu-order-card" >
                             <img src={OrderThreeJPG} className="menu-order-card-image" width={"150px"} height={"150px"}></img>
                             <div className="menu-order-card-background"></div>
-                            <div className="menu-order-card-title">#3</div>
+                            <div className="menu-order-card-title">Order 3</div>
                         </Link>
                         <Link to="/menu/order-four" className="menu-order-card">
                             <img src={OrderFourJPG} className="menu-order-card-image" width={"150px"} height={"150px"}></img>
                             <div className="menu-order-card-background"></div>
-                            <div className="menu-order-card-title">#4</div>
+                            <div className="menu-order-card-title">Order 4</div>
                         </Link>
                         <Link to="/menu/order-five" className="menu-order-card">
                             <img src={OrderFiveJPG} className="menu-order-card-image" width={"150px"} height={"150px"}></img>
                             <div className="menu-order-card-background"></div>
-                            <div className="menu-order-card-title">#5</div>
+                            <div className="menu-order-card-title">Order 5</div>
                         </Link>
                         <Link to="/menu/order-six" className="menu-order-card">
                             <img className="menu-order-card-image" width={"150px"} height={"150px"}></img>
                             <div className="menu-order-card-background"></div>
-                            <div className="menu-order-card-title">#6</div>
+                            <div className="menu-order-card-title">Order 6</div>
                         </Link>
                         <Link to="/menu/order-seven" className="menu-order-card">
                             <img src={OrderSevenJPG} className="menu-order-card-image" width={"150px"} height={"150px"}></img>
                             <div className="menu-order-card-background"></div>
-                            <div className="menu-order-card-title">#7</div>
+                            <div className="menu-order-card-title">Order 7</div>
                         </Link>
                         <Link to="/menu/order-eight" className="menu-order-card">
                             <img src={OrderEightJPG} className="menu-order-card-image" width={"150px"} height={"150px"}></img>
                             <div className="menu-order-card-background"></div>
-                            <div className="menu-order-card-title">#8</div>
+                            <div className="menu-order-card-title">Order 8</div>
                         </Link>
                         <Link to="/menu/order-nine" className="menu-order-card">
                             <img src={OrderNineJPG} className="menu-order-card-image" width={"150px"} height={"150px"}></img>
                             <div className="menu-order-card-background"></div>
-                            <div className="menu-order-card-title">#9</div>
+                            <div className="menu-order-card-title">Order 9</div>
                         </Link>
                         <Link to="/menu/order-ten" className="menu-order-card">
                             <img src={OrderTenJPG} className="menu-order-card-image" width={"150px"} height={"150px"}></img>
                             <div className="menu-order-card-background"></div>
-                            <div className="menu-order-card-title">#10</div>
+                            <div className="menu-order-card-title">Order 10</div>
                         </Link>
                     </div>
                 </div>

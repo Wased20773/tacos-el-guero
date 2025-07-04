@@ -1,0 +1,84 @@
+.contact-us-form {
+    width: 850px;
+    padding: 15px;
+    margin: 20px 0;
+    
+    /* border: 1px solid black; */
+    border-radius: 0.25cm;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-us-form-name-email-input-group {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.contact-us-form-input-name {
+    display: flex;
+    flex-direction: column;
+    width: 50%; /* creates a 25%/100% */
+}
+
+.contact-us-form-input-email {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* creates a 75%/100% */
+}
+
+.contact-us-form-input-style {
+    border: none;
+    border-radius: 0.10cm;
+    padding: 5px 10px;
+}
+
+#name {
+    width: auto;
+}
+
+#email {
+    width: auto;
+}
+
+#message {
+    resize: vertical;
+}
+
+.contact-us-form-button-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-us-submit-button,
+.contact-us-reset-button {
+    border: none;
+    border-radius: 0.25cm;
+    width: 80px;
+    height: 40px;
+}
+
+.contact-us-submit-button {
+    background-color: rgb(119, 255, 130);
+    transition: 0.5s;
+}
+
+.contact-us-reset-button {
+    background-color: rgb(255, 87, 87);
+    transition: 0.5s;
+}
+
+.contact-us-submit-button:hover {
+    transition: 0.5s;
+    background-color: rgb(63, 175, 73);
+    cursor: pointer;
+}
+.contact-us-reset-button:hover {
+    transition: 0.5s;
+    background-color: rgb(192, 57, 57);
+    cursor: pointer;
+}

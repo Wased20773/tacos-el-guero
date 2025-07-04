@@ -92,6 +92,7 @@
     justify-content: center;
     color: white;
     rotate: -15deg;
+    text-align: center;
 }
 
 .menu-order-card:hover {
