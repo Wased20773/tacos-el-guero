@@ -30,6 +30,12 @@
     width: 100%; /* creates a 75%/100% */
 }
 
+.contact-us-form-input-subject {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .contact-us-form-input-style {
     border: none;
     border-radius: 0.10cm;
@@ -81,4 +87,12 @@
     transition: 0.5s;
     background-color: rgb(192, 57, 57);
     cursor: pointer;
+}
+
+label[for="email"]::after,
+label[for="message"]::after,
+label[for="subject"]::after {
+    content: " *";
+    color: red;
+    font-weight: bold;
 }

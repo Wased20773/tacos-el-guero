@@ -6,7 +6,7 @@ import ToastSuccess from "../miscellaneous/toast/ToastSuccess.jsx"
 import ToastFailure from "../miscellaneous/toast/ToastFailure.jsx"
 
 function ContactUs() {
-    const [ state, handleSubmit ] = useForm("xyzkyqpg");
+    const [ state, handleSubmit ] = useForm("xzzgwojl");
     const [ toastSuccess, setToastSuccess ] = useState(false);
     const [ toastFailure, setToastFailure ] = useState(false);
     const formRef = useRef(null);
@@ -48,8 +48,7 @@ function ContactUs() {
                                 id='name'
                                 name='name'
                             />
-                            <ValidationError 
-                                // TODO: Add styling to message popups
+                            <ValidationError
                                 className='validate-popup-error'
                                 prefix="Name" 
                                 field="name"
@@ -67,17 +66,31 @@ function ContactUs() {
                                 name='email'
                                 required
                             />
-                            <ValidationError 
-                                // TODO: Add styling to message popups
+                            <ValidationError
                                 prefix="Email" 
                                 field="email"
                                 errors={state.errors}
                             />
                         </div>
                     </div>
+
+                    <div className='contact-us-form-input-subject'>
+                            <label for="subject">Subject</label>
+                            <input
+                                className='contact-us-form-input-style'
+                                type='text'
+                                id='subject'
+                                name='subject'
+                                required
+                            />
+                            <ValidationError
+                                prefix="Subject" 
+                                field="subject"
+                                errors={state.errors}
+                            />
+                        </div>
                     
                     <label for="message">Message</label>
-                    {/* TODO: create a container to minipulate size, rows, and color */}
                     <textarea
                         className='contact-us-form-input-message contact-us-form-input-style'
                         type='text'
@@ -87,7 +100,6 @@ function ContactUs() {
                         required
                     />
                     <ValidationError 
-                        // TODO: Add styling to message popups
                         prefix="Message" 
                         field="message"
                         errors={state.errors}

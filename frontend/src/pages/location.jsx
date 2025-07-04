@@ -3,7 +3,7 @@ import "../styles/Location.css"
 import PinIcon from "../miscellaneous/icons/PinIcon.jsx"
 import ClockIcon from "../miscellaneous/icons/ClockIcon.jsx"
 
-const mapLocation = 'https://www.google.com/maps/search/tacos+el+guero/@45.5560045,-122.6212069,6088m/data=!3m2!1e3!4b1?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D';
+const mapLocation = 'https://www.google.com/maps/place/Tacos+El+Guero/@45.5562397,-122.6005799,49m/data=!3m1!1e3!4m6!3m5!1s0x5495a6b5bffe7957:0x3c3bffcb7fc23b6b!8m2!3d45.556277!4d-122.60045!16s%2Fg%2F11cjd73mqt?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D';
 
 function Location() {
     
