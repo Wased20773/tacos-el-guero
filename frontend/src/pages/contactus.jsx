@@ -36,8 +36,8 @@ function ContactUs() {
             <div className='contact-us-container'>
                 <div>Contact Us</div>
 
-                <div>Have any questions and/or concerns about our business?</div>
-                <div>Shoot us an email and well get back to you!</div>
+                <div className='contact-us-p'>Have any questions and/or concerns about our business?</div>
+                <div className='contact-us-p'>Shoot us an email and well get back to you!</div>
                 <form className='contact-us-form' onSubmit={handleSubmit} ref={formRef}>
                     <div className='contact-us-form-name-email-input-group'>
                         <div className='contact-us-form-input-name'>
@@ -126,14 +126,12 @@ function ContactUs() {
                         message="Thank you for submitting."
                         timer={4000}
                     />
-                    
                 )}
                 { toastFailure && (
                     <ToastFailure 
                         message="Something went wrong, please refresh your page"
                         timer={6000}
                     />
-                    
                 )}
         </>
     )

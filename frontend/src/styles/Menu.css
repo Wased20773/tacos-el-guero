@@ -1,11 +1,20 @@
 /* .menu-container {} */
 :root {
-    --menu-width-desktop: 550px; /* Subject to change */
+    /* Desktop View */
+    --menu-width: 650px;
+    --order-width: 1000px;
     --back-button-margin-space: 10px;
+    --order-card-size: 300px;
+    --order-card-gap: 50px;
+    --order-font-size: 60px;
+    --order-scale-size: scale(1.10);
+    --order-hover-opacity: 0.70;
 }
 
+/* Desktop View (width: 1090px - 1440px) */
+
 .custome-order-container {
-    width: var(--menu-width-desktop);
+    width: var(--menu-width);
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -20,7 +29,6 @@
 }
 
 .menu-price-container {
-    /* width: 100%; */
     border: 3px solid black;
     border-radius: 0.25cm;
     padding: 20px;
@@ -35,24 +43,24 @@
 .menu-price {
     display: flex;
     justify-content: space-between;
+    align-items: end;
 }
 
 .menu-order-numbers-container {
-    width: var(--menu-width-desktop);
+    width: var(--order-width);
+    margin-top: 40px;
 }
 
 .menu-order-numbers-inner-container {
-    margin-top: 10px;
+    margin: 50px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
-    gap: 10px;
+    gap: var(--order-card-gap);
 }
 
 .menu-order-card {
-    width: 150px;
-    height: 150px;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
@@ -62,10 +70,14 @@
     margin: none;
     padding: none;
 
+    overflow: hidden;
+
     transition: 0.5s;
 }
 
 .menu-order-card-image {
+    width: var(--order-card-size);
+    height: var(--order-card-size);
     grid-area: 1/1;
     z-index: 1;
 
@@ -93,18 +105,23 @@
     color: white;
     rotate: -15deg;
     text-align: center;
+
+    width: 80%;
+    height: 80%;
+    font-size: var(--order-font-size);
+    margin: auto;
 }
 
 .menu-order-card:hover {
     transition: 0.5s;
     
-    transform: scale(1.10);
+    transform: var(--order-scale-size);
     cursor: pointer;
 }
 
 .menu-order-card:hover .menu-order-card-background {
     transition: 0.5s;
-    opacity: 0.70;
+    opacity: var(--order-hover-opacity);
 }
 
 .menu-h2-order-description {
@@ -157,4 +174,47 @@
 
 .menu-drinks-header {
     margin-top: 15px;
+}
+
+/* Table View (width: 768px - 1089px) */
+@media(min-width: 768px) and (max-width: 1089px) {
+    :root {
+        --menu-width: 450px;
+        --order-width: 750px;
+        --back-button-margin-space: 35px;
+        --order-card-size: 300px;
+        --order-card-gap: 30px;
+        --order-font-size: 50px;
+        --order-scale-size: scale(1.0);
+        --order-hover-opacity: 0.5;
+    }
+}
+
+/* Large Mobile View (width: 481px - 767px) */
+@media(min-width: 481px) and (max-width: 767px) {
+    :root {
+        --menu-width: 450px;
+        --order-width: 450px;
+        --back-button-margin-space: 25px;
+        --order-card-size: 400px;
+        --order-card-gap: 15px;
+        --order-font-size: 50px;
+        --order-scale-size: scale(1.0);
+        --order-hover-opacity: 0.5;
+    }
+}
+
+
+/* Mobile View (width: 480px <=)*/
+@media(max-width: 480px){
+    :root {
+        --menu-width: 280px;
+        --order-width: 280px;
+        --back-button-margin-space: 20px;
+        --order-card-size: 120px;
+        --order-card-gap: 5px;
+        --order-font-size: 20px;
+        --order-scale-size: scale(1.0);
+        --order-hover-opacity: 0.5;
+    }
 }

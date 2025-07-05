@@ -12,6 +12,11 @@
     gap: 5px;
 }
 
+.contact-us-p {
+    text-align: center;
+    margin: 0 30px;
+}
+
 .contact-us-form-name-email-input-group {
     display: flex;
     flex-direction: row;
@@ -95,4 +100,52 @@ label[for="subject"]::after {
     content: " *";
     color: red;
     font-weight: bold;
+}
+
+/* Table View (width: 768px - 1089px) */
+@media(min-width: 768px) and (max-width: 1089px) {
+    .contact-us-form {
+        width: 650px;
+    }
+}
+
+/* Large Mobile View (width: 481px - 767px) */
+@media(min-width: 481px) and (max-width: 767px) {
+    .contact-us-form {
+        max-width: 425px;
+    }
+    .contact-us-form-name-email-input-group {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .contact-us-form-input-name {
+        width: 100%;
+    }
+    .contact-us-submit-button:hover {
+        background-color: rgb(119, 255, 130);
+    }
+    .contact-us-reset-button:hover {
+        background-color: rgb(255, 87, 87);
+    }
+}
+
+
+/* Mobile View (width: 480px <=)*/
+@media(max-width: 480px){
+    .contact-us-form {
+        width: 80%;
+    }
+    .contact-us-form-name-email-input-group {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .contact-us-form-input-name {
+        width: 100%;
+    }
+    .contact-us-submit-button:hover {
+        background-color: rgb(119, 255, 130);
+    }
+    .contact-us-reset-button:hover {
+        background-color: rgb(255, 87, 87);
+    }
 }

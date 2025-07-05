@@ -1,12 +1,8 @@
 .pin-icon-svg {
-    /* TODO: Add for mobile view */
-
     padding-bottom: 30px;
 }
 
 .clock-icon-svg {
-    /* TODO: Add for mobile view */
-
     padding-bottom: 30px;
 }
 
@@ -15,29 +11,20 @@
 }
 
 .location-p-map {
-    /* TODO: Change style to fit better with surroundings */
-    padding: 15px 0 15px;
-    width: 70%;
-    border-radius: 0.25cm;
-    background: white;
     text-align: center;
-    text-decoration: none;
-    color: blue;
+    color: rgb(54, 54, 255);
     transition: 0.5s;
-}
-.location-p-map:hover {
-    transition: 0.5s;
-    background: rgb(211, 211, 211);
 }
 
 .location-h2 {
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .location-group-section {
-    margin-top: 50px;
+    margin: 50px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -51,8 +38,6 @@
 }
 
 .location-group-seperator {
-    margin-top: 50px;
-    margin-bottom: -50px;
     border: 1px solid black;
 }
 
@@ -60,4 +45,72 @@
     width: 70%;
     display: flex;
     justify-content: space-between;
+}
+
+/* Table View (width: 768px - 1089px) */
+@media(min-width: 768px) and (max-width: 1089px) {
+    .pin-icon-svg {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .clock-icon-svg {
+        width: 80px;
+        height: 80px;
+    }
+
+    .location-h2 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    .location-p {
+        font-size: 15px;
+    }
+    .location-section {
+        width: 300px;
+    }
+}
+
+/* Large Mobile View (width: 481px - 767px) */
+@media(min-width: 481px) and (max-width: 767px) {
+    .location-p {
+        font-size: 14px;
+    }
+    .location-section {
+        width: 500px;
+    }
+    .location-group-section {
+        flex-direction: column;
+    }
+    .location-group-seperator {
+        margin: 40px 75px;
+    }
+}
+
+
+/* Mobile View (width: 480px <=)*/
+@media(max-width: 480px){
+    .pin-icon-svg {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .clock-icon-svg {
+        width: 60px;
+        height: 60px;
+    }
+    .location-p {
+        font-size: 12px;
+    }
+    .location-section {
+        width: 100%;
+    }
+    .location-group-section {
+        flex-direction: column;
+        width: 100%;
+    }
+    .location-group-seperator {
+        margin: 40px 75px;
+    }
 }

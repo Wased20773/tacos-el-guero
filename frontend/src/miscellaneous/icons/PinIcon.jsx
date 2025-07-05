@@ -11,13 +11,13 @@ const PinIcon = ( { width, height, innerCircleRadius, strockWidth, strockColor }
             xmlns="http://www.w3.org/2000/svg"
             fill="none" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)">
             <path
-                class="cls-1"
+                className="cls-1"
                 d="M41,18c0,11-17,29-17,29S7,29,7,18C7,8.06,14.06,1,24,1S41,8.06,41,18Z"
                 stroke={strockColor}
                 strokeWidth={strockWidth}
             ></path>
             <circle
-                class="cls-2"
+                className="cls-2"
                 cx="24"
                 cy="16"
                 r={innerCircleRadius}

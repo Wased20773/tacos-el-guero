@@ -15,7 +15,7 @@ function Location() {
                 <div className="location-group-section">
                     <div className='location-section'>
                         <PinIcon 
-                            width={"100px"}
+                            width={"800px"}
                             height={"100px"}
                             innerCircleRadius={"5"}
                             strockWidth={"1"}

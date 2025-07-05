@@ -16,35 +16,35 @@ const OrderOne = () => {
             <div className="menu-h3">Meat</div>
             <div className="menu-price">
                 <div>Sausage</div>
-                <div>$ 7.50</div>
+                <div>$7.50</div>
             </div>
             <div className="menu-price">
                 <div>Asada Pork</div>
-                <div>$ 7.50</div>
+                <div>$7.50</div>
             </div>
             <div className="menu-price">
                 <div>Chicken</div>
-                <div>$ 7.50</div>
+                <div>$7.50</div>
             </div>
             <div className="menu-price">
                 <div>Pastor</div>
-                <div>$ 7.50</div>
+                <div>$7.50</div>
             </div>
             <div className="menu-price">
                 <div>Tripe</div>
-                <div>$ 7.50</div>
+                <div>$7.50</div>
             </div>
             <div className="menu-price">
                 <div>Crispy Tripe</div>
-                <div>$ 9.00</div>
+                <div>$9.00</div>
             </div>
             <div className="menu-price">
                 <div>Buche (Pork Stomach)</div>
-                <div>$ 8.25</div>
+                <div>$8.25</div>
             </div>
             <div className="menu-price">
                 <div>No Meat (rice, beans, onion & cilantro)</div>
-                <div>$ 5.25</div>
+                <div>$5.25</div>
             </div>
         </div>
       </div>

@@ -25,13 +25,15 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     justify-items: center;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
 }
 
 .homepage-card {
     transition: 0.5s;
 
+    width: 250px;
+    height: 250px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -40,6 +42,8 @@
     text-decoration: none;
     margin: none;
     padding: none;
+
+    overflow: hidden;
 }
 
 .homepage-card-image {
@@ -53,7 +57,7 @@
 
 .homepage-card-background {
     transition: 0.5s;
-    
+
     width: 250px;
     height: 250px;
     background-color: black;
@@ -66,14 +70,15 @@
 .homepage-card-title {
     font-size: 30px;
     rotate: -15deg;
-    width: 250px;
-    height: 250px;
+    width: 80%;
+    height: 80%;
     grid-area: 1/1;
     z-index: 2;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto;
     color: white;
     text-align: center;
 }
@@ -92,14 +97,60 @@
     opacity: 0.70;
 }
 
-@media (max-width: 1199px) {
+/* Table View (width: 768px - 1089px) */
+@media(min-width: 768px) and (max-width: 1089px) {
     .homepage-cards-container {
         grid-template-columns: repeat(2, 1fr);
+        max-width: 1000px;
+    }
+    .homepage-card-image {
+        width: 350px;
+        height: 350px;
+    }
+    .homepage-card {
+        width: 350px;
+        height: 350px;
+    }
+    .homepage-card-background {
+        width: 350px;
+        height: 350px;
+    }
+    .homepage-card-title {
+        font-size: 50px;
     }
 }
 
-@media (max-width: 599px) {
+/* Large Mobile View (width: 481px - 767px) */
+@media(min-width: 481px) and (max-width: 767px) {
+    .homepage-cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .homepage-card-image {
+        width: 200px;
+        height: 200px;
+    }
+    .homepage-card {
+        width: 200px;
+        height: 200px;
+    }
+    .homepage-card-background {
+        width: 200px;
+        height: 200px;
+    }
+    .homepage-card-title {
+        font-size: 20px;
+    }
+}
+
+
+/* Mobile View (width: 480px <=)*/
+@media(max-width: 480px){
     .homepage-cards-container {
         grid-template-columns: 1fr;
+        gap: 5px;
+    }
+    .homepage-card-title {
+        font-size: 50px;
     }
 }

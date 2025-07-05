@@ -34,14 +34,16 @@ html {
   margin-bottom: 25px;
   padding: 0 50px 0 50px;
   border-bottom: 5px dotted black;
+  text-align: center;
 }
 
 .toast {
   position:fixed;
   top: 100px;
   left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px 20px;
+  max-width: 500px;
+  transform: translate(-50%, -150%);
+  padding: 10px 30px;
   z-index: 10;
   
   animation-name: fadeInOut;
@@ -68,4 +70,48 @@ html {
 .toast-failure {
   background-color: rgb(255, 202, 202);
   border: 2px solid rgb(255, 55, 55);
+}
+
+/* Table View (width: 768px - 1089px) */
+@media(min-width: 768px) and (max-width: 1089px) {
+  .menu-container > div:first-child,
+  .location-container > div:first-child,
+  .about-us-container > div:first-child,
+  .contact-us-container > div:first-child {
+    font-size: 40px;
+  }
+  .toast {
+    top: 120px;
+  }
+}
+
+/* Large Mobile View (width: 481px - 767px) */
+@media(min-width: 481px) and (max-width: 767px) {
+  .menu-container > div:first-child,
+  .location-container > div:first-child,
+  .about-us-container > div:first-child,
+  .contact-us-container > div:first-child {
+    font-size: 35px;
+  }
+  .toast {
+    top: 135px;
+    width: 300px;
+    padding: 10px 20px;
+  }
+}
+
+
+/* Mobile View (width: 480px <=)*/
+@media(max-width: 480px){
+  .menu-container > div:first-child,
+  .location-container > div:first-child,
+  .about-us-container > div:first-child,
+  .contact-us-container > div:first-child {
+    font-size: 30px;
+  }
+  .toast {
+    top: 135px;
+    width: 256px;
+    padding: 10px 20px;
+  }
 }

@@ -15,13 +15,13 @@ const ClockIcon = ( { width, height, strockWidth, strockColor }) => {
             cx="12"
             cy="12"
             r="10.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
         ></circle>
         <path
             d="M12 6V12L16.5 16.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
         ></path>
     </svg>
   )
