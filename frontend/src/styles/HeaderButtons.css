@@ -1,6 +1,5 @@
 .header-container {
     width: 100%;
-
     position: absolute;
     z-index: 4;
 
@@ -47,7 +46,6 @@
     color: white;
     font-size: 15px;
     text-decoration: none;
-    font-family: cursive;
 
     display: flex;
     justify-content: center;
@@ -67,4 +65,158 @@
 .header-button-menu:hover {
     transition: 0.3s;
     background-color: orange;
+}
+
+.header-button.active-header {
+    background-color: white;
+    color: black;
+}
+.header-button-menu.active-header {
+    background-color: orange;
+    color: black;
+}
+
+.burger-button {
+    display: none;
+    position: fixed;
+    background-color: black;
+    /* width: 100%; */
+    z-index: 7;
+}
+
+.burger-button:hover {
+    cursor: pointer;
+}
+
+.logo-button {
+    position: fixed;
+    z-index: 7;
+    color: white;
+
+    /* width: 100%; */
+    right: 10px;
+}
+
+.logo-button:hover {
+    cursor: pointer;
+}
+
+/* Table View (width: 768px - 1089px) */
+@media(min-width: 768px) and (max-width: 1089px) {
+    .header-container {
+        justify-content: center;
+    }
+    .header-buttons-group {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+/* Large Mobile View (width: 481px - 767px) */
+@media(min-width: 481px) and (max-width: 767px) {
+    .header-container {
+        justify-content: center;
+    }
+    .header-background {
+        height: 81px;
+        position:fixed;
+        left: 0;
+        right: 0;
+
+        background-color: black;
+        opacity: 1;
+
+        box-shadow: none;
+    }
+    .header-buttons-group {
+        margin: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+
+        position: fixed;
+        border-bottom: none;
+
+        height: 81px;
+        align-items: center;
+    }
+    .header-button-menu,
+    .header-button {
+        width: 100px;
+        height: 50px;
+        color: white;
+        border: 2px solid white;
+        font-size: 13px;
+    }
+}
+
+/* Mobile View (width: 480px <=)*/
+@media(max-width: 480px){
+    .header-container {
+        justify-content: center;
+    }
+    .header-background {
+        height: 52px;
+        position:fixed;
+
+        background-color: black;
+        opacity: 1;
+
+        box-shadow: none;
+    }
+    .header-buttons-group {
+        gap: 0;
+        margin: 0;
+        padding-left: 0;
+        padding-bottom: 0;
+
+        position: fixed;
+        /* transform: translate(0, -208px); */
+        border-bottom: none;
+
+        flex-direction: column;
+        align-items: center;
+
+        /* animation-name: panDown;
+        animation-duration: 0.5s;
+        animation-direction:reverse; */
+    }
+    /* @keyframes panDown {
+        0% { transform:  translate(0, -208px);}
+        100% { transform: translate(0, 52px); }
+    } */
+    .header-button-menu,
+    .header-button {
+        /* display: none; */
+        width: 100lvi;
+        height: 50px;
+        color: white;
+        background-color: black;
+        text-align: center;
+        border-radius: 0;
+        border-bottom: 2px solid white;
+        font-size: 16px;
+    }
+
+    .burger-container {
+        position: fixed;
+        z-index: 7;
+        background-color: black;
+        width: 100%;
+        height: 52px;
+        padding-left: 5px;        
+    }
+    .burger-button {
+        display: flex;
+        /* width: 100%; */
+    }
+
+    .header-open {
+        top: 52px;
+        transition: 0.25s;
+    }
+    .header-close {
+        top: -208px;
+        transition: 0.25s;
+    }
 }
