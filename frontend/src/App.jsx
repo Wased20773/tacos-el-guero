@@ -42,6 +42,11 @@ function App() {
   //   fetchAPI();
   // }, [])
 
+  useEffect(() => {
+    // hook to the top of the page
+    window.scrollTo(0, 0);
+  }, [location.pathname])
+
   return (
     <>
       <div className='app-container'>

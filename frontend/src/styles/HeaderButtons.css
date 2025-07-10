@@ -24,8 +24,12 @@
     z-index: 6;
 
     display: flex;
-    gap: 10px;
+    justify-content: end;
+}
 
+.header-button-links-group {
+    display: flex;
+    gap: 10px;
     margin-right: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -88,18 +92,31 @@
     cursor: pointer;
 }
 
-.logo-button {
-    position: fixed;
+.logo-button-container {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
     z-index: 7;
-    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    /* width: 100%; */
-    right: 10px;
+.logo-button-link {
+    border-radius: 50%;
+}
+
+.logo-button-image {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
 }
 
 .logo-button:hover {
     cursor: pointer;
 }
+
 
 /* Table View (width: 768px - 1089px) */
 @media(min-width: 768px) and (max-width: 1089px) {
@@ -107,8 +124,27 @@
         justify-content: center;
     }
     .header-buttons-group {
+        justify-content: center;
+        /* padding-left: 50px;
+        padding-right: 50px; */
+    }
+    .header-button-links-group {
         padding-left: 50px;
         padding-right: 50px;
+    }
+    .logo-button-container {
+        position: absolute;
+        left: 10px;
+        /* left: 0;
+        z-index: 6;
+        width: 100%;
+        justify-content: center; */
+    }
+
+    .logo-button-link {
+    }
+
+    .logo-button-image {
     }
 }
 
@@ -116,6 +152,7 @@
 @media(min-width: 481px) and (max-width: 767px) {
     .header-container {
         justify-content: center;
+        height: 85px;
     }
     .header-background {
         height: 81px;
@@ -123,26 +160,35 @@
         left: 0;
         right: 0;
 
-        background-color: black;
         opacity: 1;
 
         box-shadow: none;
     }
     .header-buttons-group {
-        margin: 0;
-        padding-bottom: 0;
-        padding-left: 0;
-        padding-right: 0;
-
         position: fixed;
+    }
+    .header-button-links-group {
+        margin: 0;
+        padding: 0;
         border-bottom: none;
 
-        height: 81px;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(5, 1fr);
         align-items: center;
+        justify-items: center;
     }
+    .logo-button-container {
+        top: unset;
+        left: unset;
+        transform: unset;
+        position: unset;
+        grid-area: 1/3;
+    }
+
     .header-button-menu,
     .header-button {
-        width: 100px;
+        width: 80px;
         height: 50px;
         color: white;
         border: 2px solid white;
@@ -156,39 +202,29 @@
         justify-content: center;
     }
     .header-background {
-        height: 52px;
-        position:fixed;
-
-        background-color: black;
-        opacity: 1;
-
-        box-shadow: none;
+        display: none;
     }
     .header-buttons-group {
-        gap: 0;
-        margin: 0;
-        padding-left: 0;
-        padding-bottom: 0;
-
         position: fixed;
-        /* transform: translate(0, -208px); */
-        border-bottom: none;
-
+        width: 100%;
+        background-color: black;
+        transition: top 0.3s ease;
+        left: 0;
+        z-index: 6;
+    }
+    .header-button-links-group {
+        display: flex;
         flex-direction: column;
         align-items: center;
-
-        /* animation-name: panDown;
-        animation-duration: 0.5s;
-        animation-direction:reverse; */
+        justify-content: center;
+        gap: 0;
+        padding: 0;
+        margin: 0;
     }
-    /* @keyframes panDown {
-        0% { transform:  translate(0, -208px);}
-        100% { transform: translate(0, 52px); }
-    } */
+
     .header-button-menu,
     .header-button {
-        /* display: none; */
-        width: 100lvi;
+        width: 100vw;
         height: 50px;
         color: white;
         background-color: black;
@@ -202,7 +238,8 @@
         position: fixed;
         z-index: 7;
         background-color: black;
-        width: 100%;
+        /* width: 100%; */
+        left: 0;
         height: 52px;
         padding-left: 5px;        
     }
@@ -210,7 +247,6 @@
         display: flex;
         /* width: 100%; */
     }
-
     .header-open {
         top: 52px;
         transition: 0.25s;
@@ -219,4 +255,33 @@
         top: -208px;
         transition: 0.25s;
     }
+    .logo-button-container {
+        position: fixed;
+        z-index: 10;
+        left: unset;
+        top: 26px;
+        padding-right: 10px;
+        height: 52px;
+        
+        width: 100%;
+        background-color: black;
+        
+        display: flex;
+        justify-content: end;
+
+    }
+    .logo-button-link {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* width: 50px;
+        height: 50px; */
+
+    }
+    .logo-button-image {
+        width: 40px;
+        height: 40px;
+    }
+    
 }

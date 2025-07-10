@@ -1,17 +1,23 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import LogoPrototype from '../../assets/logo-prototype.png'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import LogoPrototype from '../../assets/logo-prototype.png';
 
-const LogoButton = ( { setLinkClicked } ) => {
+const LogoButton = ({ setLinkClicked }) => {
   return (
-    <Link to={"/"} className='logo-button'>
+    <div className='logo-button-container'>
+      <Link 
+        to="/" 
+        className='logo-button-link' 
+        onClick={() => setLinkClicked((prev) => !prev)}
+      >
         <img
-            src={LogoPrototype}
-            width={"45px"}
-            height={"45px"}
-            onClick={() => setLinkClicked((prev) => (!prev))}
-    /></Link>
-  )
-}
+          className='logo-button-image'
+          src={LogoPrototype}
+          alt="Logo"
+        />
+      </Link>
+    </div>
+  );
+};
 
-export default LogoButton
+export default LogoButton;

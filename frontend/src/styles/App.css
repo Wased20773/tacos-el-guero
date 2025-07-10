@@ -57,6 +57,7 @@
     text-decoration: none;
 }
 
+
 .footer-p {
     font-size: 16px;
     color: rgb(160, 160, 160)
@@ -64,6 +65,10 @@
 
 .footer-list-find-us {
     width: 300px;
+}
+
+.email {
+    color: orange;
 }
 
 .map {
