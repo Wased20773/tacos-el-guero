@@ -12,7 +12,8 @@
 
 .location-p-map {
     text-align: center;
-    color: rgb(54, 54, 255);
+    color: rgb(0, 119, 255);
+    text-decoration: none;;
     transition: 0.5s;
 }
 

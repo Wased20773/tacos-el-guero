@@ -9,12 +9,22 @@
 body {
   margin: 0;
 }
+
+@font-face {
+  font-family: 'KoomikMono';
+  src: url('../src/assets/fonts/KoomikMono-Regular.otf') ;
+}
+html,
+input[type="submit"],
+input[type="reset"] {
+  font-family: 'KoomikMono';
+}
 html {
   background-color: rgb(245, 178, 101);
 }
 
 .menu-container,
-.order-conatiner,
+.order-container,
 .location-container,
 .about-us-container,
 .contact-us-container {

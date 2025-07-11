@@ -9,14 +9,18 @@
 
 .homepage-description-h2 {
     font-size: 35px;
-    font-weight: bold;
-    border-bottom: 1px solid black;
     padding: 0 30px 0 30px;
+    font-weight: bold;
+}
+
+.homepage-description-h2-divider {
+    width: 650px;
+    border-bottom: 1px solid black;
 }
 
 .homepage-description-p {
     font-size: 18px;
-
+    width: 600px;;
     padding: 10px 30px 20px 30px;
 }
 
@@ -85,20 +89,27 @@
 
 .homepage-card:hover {
     transition: 0.5s;
-
     transform: scale(1.10);
-
     cursor: pointer;
 }
 
 .homepage-card:hover .homepage-card-background {
     transition: 0.5s;
-
     opacity: 0.70;
 }
 
 /* Table View (width: 768px - 1089px) */
 @media(min-width: 768px) and (max-width: 1089px) {
+    .homepage-description-h2 {
+        font-size: 30px;
+    }
+    .homepage-description-h2-divider {
+        width: 550px;
+    }
+    .homepage-description-p {
+        font-size: 17px;
+        width: 500px;
+    }
     .homepage-cards-container {
         grid-template-columns: repeat(2, 1fr);
         max-width: 1000px;
@@ -118,10 +129,26 @@
     .homepage-card-title {
         font-size: 50px;
     }
+    .homepage-card:hover {
+        transform: none;
+    }
+    .homepage-card:hover .homepage-card-background {
+        opacity: 0.50;
+    }
 }
 
 /* Large Mobile View (width: 481px - 767px) */
 @media(min-width: 481px) and (max-width: 767px) {
+    .homepage-description-h2 {
+        font-size: 25px;
+    }
+    .homepage-description-h2-divider {
+        width: 450px;
+    }
+    .homepage-description-p {
+        font-size: 15px;
+        width: 400px;
+    }
     .homepage-cards-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
@@ -141,16 +168,39 @@
     .homepage-card-title {
         font-size: 20px;
     }
+    .homepage-card:hover {
+        transform: none;
+    }
+    .homepage-card:hover .homepage-card-background {
+        opacity: 0.50;
+    }
 }
 
 
 /* Mobile View (width: 480px <=)*/
 @media(max-width: 480px){
+    .homepage-description-h2 {
+        font-size: 20px;
+        width: unset;
+    }
+    .homepage-description-h2-divider {
+        width: 80%;
+    }
+    .homepage-description-p {
+        font-size: 13px;
+        width: unset;
+    }
     .homepage-cards-container {
         grid-template-columns: 1fr;
         gap: 5px;
     }
     .homepage-card-title {
         font-size: 50px;
+    }
+    .homepage-card:hover {
+        transform: none;
+    }
+    .homepage-card:hover .homepage-card-background {
+        opacity: 0.50;
     }
 }

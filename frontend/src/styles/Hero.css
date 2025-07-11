@@ -81,4 +81,7 @@
     .hero-container {
         margin-top: 52px;
     }
+    .hero-image img {
+        max-width: 100%;
+    }
 }

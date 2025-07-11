@@ -41,7 +41,7 @@ function ContactUs() {
                 <form className='contact-us-form' onSubmit={handleSubmit} ref={formRef}>
                     <div className='contact-us-form-name-email-input-group'>
                         <div className='contact-us-form-input-name'>
-                            <label for="name">Name</label>
+                            <label htmlFor="name">Name</label>
                             <input
                                 className='contact-us-form-input-style'
                                 type='text'
@@ -58,7 +58,7 @@ function ContactUs() {
                         </div>
                     
                         <div className='contact-us-form-input-email'>
-                            <label for="email">Email</label>
+                            <label htmlFor="email">Email</label>
                             <input
                                 className='contact-us-form-input-style'
                                 type='text'
@@ -75,7 +75,7 @@ function ContactUs() {
                     </div>
 
                     <div className='contact-us-form-input-subject'>
-                            <label for="subject">Subject</label>
+                            <label htmlFor="subject">Subject</label>
                             <input
                                 className='contact-us-form-input-style'
                                 type='text'
@@ -90,7 +90,7 @@ function ContactUs() {
                             />
                         </div>
                     
-                    <label for="message">Message</label>
+                    <label htmlFor="message">Message</label>
                     <textarea
                         className='contact-us-form-input-message contact-us-form-input-style'
                         type='text'

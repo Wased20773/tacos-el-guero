@@ -10,7 +10,7 @@ function Footer() {
               <div className="footer-list-contact">
                 <div className="footer-list-h1">Contact</div>
                 <Link className="footer-fit-content email footer-p" to="/contact-us">Email</Link>
-                <a className="footer-fit-content footer-p" href="tel:+15039872325">(503) 987-2325</a>
+                <a className="footer-fit-content footer-p" href="tel:+15039872325">(503) 987-2320</a>
               </div>
               <div className="footer-list-find-us">
                 <div className="footer-list-h1">Find Us</div>

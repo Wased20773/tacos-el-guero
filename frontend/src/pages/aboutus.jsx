@@ -109,7 +109,8 @@ function AboutUs() {
               {CardCarousel.map((slide, index) => (
                 <div key={index} className="about-me-history-text-container">
                   <div className="about-me-history-text-h2">{slide.h2}</div>
-                  <div className="about-me-history-text">{slide.text}</div>
+                  {/* Might remove text, its doing to much */}
+                  {/* <div className="about-me-history-text">{slide.text}</div> */}
                 </div>
               ))}
             </div>

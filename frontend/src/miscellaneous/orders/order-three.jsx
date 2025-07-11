@@ -4,7 +4,7 @@ import "../../styles/Menu.css"
 
 const OrderThree = () => {
   return (
-    <div className="order-conatiner">
+    <div className="order-container">
         <Link to={"/menu"} className="back-button top">
             <div className='back-button-arrow'></div>
         </Link>

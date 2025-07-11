@@ -68,11 +68,11 @@
 }
 
 .email {
-    color: orange;
+    color: rgb(0, 119, 255);
 }
 
 .map {
-    color: rgb(113, 175, 255);
+    color: rgb(0, 119, 255);
 }
 
 .footer-day-group {
@@ -86,9 +86,15 @@
     justify-content: space-between;
 }
 
+@font-face {
+    font-family: 'CaviarDreams';
+    src: url('../src/assets/fonts/CaviarDreams.ttf');
+}
 .footer-copyright {
+    font-family: 'CaviarDreams';
     font-size: 11px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+
 }
 
 /* Table View (width: 768px - 1089px) */

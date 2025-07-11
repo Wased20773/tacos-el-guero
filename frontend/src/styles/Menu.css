@@ -23,19 +23,21 @@
 .menu-h2 {
     width: 100%;
     text-align: center;
-    text-decoration: underline;
     font-size: 30px;
 
 }
 
 .menu-price-container {
-    border: 3px solid black;
+    border: 2px solid black;
     border-radius: 0.25cm;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .menu-h3 {
-    border-bottom: 3px solid black;
+    border-bottom: 1px solid black;
     font-size: 25px;
     font-weight: bold;
 }
@@ -43,7 +45,10 @@
 .menu-price {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
+}
+.menu-price div:last-child {
+    margin-left: 10px;
 }
 
 .menu-order-numbers-container {
@@ -196,9 +201,9 @@
         --menu-width: 450px;
         --order-width: 450px;
         --back-button-margin-space: 25px;
-        --order-card-size: 400px;
+        --order-card-size: 200px;
         --order-card-gap: 15px;
-        --order-font-size: 50px;
+        --order-font-size: 35px;
         --order-scale-size: scale(1.0);
         --order-hover-opacity: 0.5;
     }
