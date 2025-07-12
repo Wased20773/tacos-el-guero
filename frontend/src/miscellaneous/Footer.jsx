@@ -14,8 +14,9 @@ function Footer() {
               </div>
               <div className="footer-list-find-us">
                 <div className="footer-list-h1">Find Us</div>
+                <div className="footer-fit-content footer-p">Tacos El Guero</div>
                 <div className="footer-fit-content footer-p">4549 NE Cully Blvd</div>
-                <div className="footer-fit-content footer-p">Portland, Or 97218</div>
+                <div className="footer-fit-content footer-p">Portland, OR 97218</div>
                 <a className="footer-fit-content map footer-p" href={mapLocation}>map</a>
                 <div className="footer-day-group">
                   <div>Opening Hours</div>

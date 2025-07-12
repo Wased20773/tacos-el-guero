@@ -21,8 +21,9 @@ function Location() {
                             strockWidth={"1"}
                             strockColor={"#ffffff"}
                         />
+                        <div className='location-h2'>Tacos El Guero</div>
                         <div className='location-h2'>4549 NE Cully Blvd</div>
-                        <div className='location-h2'>Portland, Or 97218</div>
+                        <div className='location-h2'>Portland, OR 97218</div>
                         <a className='location-p-map' href={mapLocation}>map</a>
                     </div>
                     <div className='location-group-seperator'></div>

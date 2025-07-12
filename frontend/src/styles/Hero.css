@@ -42,14 +42,7 @@
     z-index: 3;
 }
 
-@font-face {
-    font-family: 'Super-Fashion';
-    src: url('../src/assets/fonts/Super-Fashion.ttf');
-}
-
 .hero-title {
-    font-family: 'Super-Fashion';
-
     font-size: 100px;
     color: white;
     text-shadow: 0 0 10px orange;

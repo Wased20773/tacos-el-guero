@@ -37,7 +37,7 @@
 }
 
 .footer-list-contact {
-    width: 300px;
+    width: 350px;
     display: flex;
     flex-direction: column;
 }
@@ -64,7 +64,7 @@
 }
 
 .footer-list-find-us {
-    width: 300px;
+    width: 350px;
 }
 
 .email {
@@ -86,12 +86,7 @@
     justify-content: space-between;
 }
 
-@font-face {
-    font-family: 'CaviarDreams';
-    src: url('../src/assets/fonts/CaviarDreams.ttf');
-}
 .footer-copyright {
-    font-family: 'CaviarDreams';
     font-size: 11px;
     margin-bottom: 15px;
 
@@ -110,10 +105,10 @@
         margin-bottom: 70px;
     }
     .footer-list-contact {
-        width: 250px;
+        width: 300px;
     }  
     .footer-list-find-us {
-        width: 250px;
+        width: 300px;
     }  
 }
 
@@ -133,10 +128,10 @@
         margin-bottom: 70px;
     }
     .footer-list-contact {
-        width: 350px;
+        width: 300px;
     }  
     .footer-list-find-us {
-        width: 350px;
+        width: 300px;
     }  
 }
 

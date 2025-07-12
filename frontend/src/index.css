@@ -14,13 +14,31 @@ body {
   font-family: 'KoomikMono';
   src: url('../src/assets/fonts/KoomikMono-Regular.otf') ;
 }
+@font-face {
+    font-family: 'Super-Fashion';
+    src: url('../src/assets/fonts/Super-Fashion.ttf');
+}
+@font-face {
+    font-family: 'CaviarDreams';
+    src: url('../src/assets/fonts/CaviarDreams.ttf');
+}
+
 html,
 input[type="submit"],
 input[type="reset"] {
   font-family: 'KoomikMono';
 }
+
 html {
   background-color: rgb(245, 178, 101);
+}
+
+.footer-copyright {
+    font-family: 'CaviarDreams';
+}
+
+.hero-title {
+    font-family: 'Super-Fashion';
 }
 
 .menu-container,
