@@ -6,9 +6,8 @@ import '../styles/HeaderButtons.css'
 import '../styles/HomePage.css'
 import HeroJPG from "../assets/hero-image.JPG"
 import MobileHerojpg from '../assets/hero-image-mobile.jpg'
-import HomepageDividerOrange from '../assets/imgs/homepage-divider-orange.png'
 import MenuJPG from '../assets/menu-tacos.JPG'
-import Locationjpg from '../assets/location.jpg'
+import Locationjpg from '../assets/Location.jpg'
 import AboutUsJPG from '../assets/about-us-image.JPG'
 import ContactUsjpg from '../assets/contact-us-image.jpg'
 
