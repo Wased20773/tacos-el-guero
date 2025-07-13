@@ -51,8 +51,8 @@
 }
 
 .homepage-card-image {
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
     border-radius: 1cm;
 
     grid-area: 1/1;
@@ -62,8 +62,8 @@
 .homepage-card-background {
     transition: 0.5s;
 
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
     background-color: black;
     opacity: 0.5;
     grid-area: 1/1;
@@ -114,15 +114,7 @@
         grid-template-columns: repeat(2, 1fr);
         max-width: 1000px;
     }
-    .homepage-card-image {
-        width: 350px;
-        height: 350px;
-    }
     .homepage-card {
-        width: 350px;
-        height: 350px;
-    }
-    .homepage-card-background {
         width: 350px;
         height: 350px;
     }
@@ -151,19 +143,12 @@
     }
     .homepage-cards-container {
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-    }
-    .homepage-card-image {
-        width: 200px;
-        height: 200px;
+        gap: 20px;
+        margin: 0 20px;
     }
     .homepage-card {
-        width: 200px;
-        height: 200px;
-    }
-    .homepage-card-background {
-        width: 200px;
-        height: 200px;
+        width: 100%;
+        height: 100%;
     }
     .homepage-card-title {
         font-size: 20px;
@@ -192,7 +177,20 @@
     }
     .homepage-cards-container {
         grid-template-columns: 1fr;
-        gap: 5px;
+        /* gap: 100px; */
+        gap: 0;
+    }
+    .homepage-card {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        border-radius: 0;
+    }
+    .homepage-card-image {
+        border-radius: 0;
+    }
+    .homepage-card-background {
+        border-radius: 0;
     }
     .homepage-card-title {
         font-size: 50px;
