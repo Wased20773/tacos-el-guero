@@ -1,3 +1,8 @@
+:root {
+    --white-divider-color: brightness(100%) invert(100%);
+    --dark-orange-color: brightness(0) invert(30%) sepia(100%) saturate(700%) hue-rotate(350deg);
+}
+
 .homepage-context-container {
     display: flex;
     flex-direction: column;
@@ -24,13 +29,29 @@
     padding: 10px 30px 20px 30px;
 }
 
+.homepage-divider-for-buttons {
+    background-image: url('../assets/imgs/homepage-divider-orange.png');
+    background-repeat: repeat-x;
+    height: 150px;
+    width: 100%;
+}
+.homepage-divider-for-buttons-flipped {
+    background-image: url('../assets/imgs/homepage-divider-orange-flipped.png');
+    background-repeat: repeat-x;
+    height: 150px;
+    width: 100%;
+    /* background-color: black; */
+}
+
 .homepage-cards-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    background-color: rgb(243, 139, 36);
+    width: 100%;
+    display: flex;
+    justify-content: center;
     gap: 20px;
     justify-items: center;
     /* max-width: 1200px; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .homepage-card {
@@ -111,12 +132,13 @@
         width: 500px;
     }
     .homepage-cards-container {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        max-width: 1000px;
     }
     .homepage-card {
-        width: 350px;
-        height: 350px;
+        width: 90%;
+        height: 90%;
+
     }
     .homepage-card-title {
         font-size: 50px;
@@ -142,13 +164,13 @@
         width: 400px;
     }
     .homepage-cards-container {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        margin: 0 20px;
+        gap: 10px;
     }
     .homepage-card {
-        width: 100%;
-        height: 100%;
+        width: 90%;
+        height: 90%;
     }
     .homepage-card-title {
         font-size: 20px;
@@ -176,20 +198,21 @@
         width: unset;
     }
     .homepage-cards-container {
+        display: grid;
         grid-template-columns: 1fr;
-        /* gap: 100px; */
-        gap: 0;
+        gap: 20px;
     }
     .homepage-card {
-        width: 100%;
+        width: 80%;
         height: 100%;
-        margin: 0 auto;
-        border-radius: 0;
+        border-radius: 1cm;
     }
     .homepage-card-image {
+        border-radius: 1cm;
         border-radius: 0;
     }
     .homepage-card-background {
+        border-radius: 1cm;
         border-radius: 0;
     }
     .homepage-card-title {

@@ -10,8 +10,8 @@ function Header() {
 
   useEffect(() => {
     // if pathname is modified/touched, then close the header
-    console.log("link: ", linkClicked);
-    console.log("header: ", openHeader);
+    // console.log("link: ", linkClicked);
+    // console.log("header: ", openHeader);
 
     // Check if the header is even open
     if (!openHeader) {
@@ -54,11 +54,11 @@ function Header() {
       {/* <LogoButton setLinkClicked={setLinkClicked}/> */}
       <div className={`header-buttons-group ${openHeader ? "header-open" : "header-close" }`}>
         <div className="header-button-links-group">
-          <LogoButton setLinkClicked={setLinkClicked} className="header-logo-big-screen"/>
-          <Link to="/" className={`header-button ${location.pathname === "/" ? "active-header" : ""}`} onClick={() => setLinkClicked((prev) => (!prev))}>Homepage</Link>
+          <Link to="/" className={`header-button first ${location.pathname === "/" ? "active-header" : ""}`} onClick={() => setLinkClicked((prev) => (!prev))}>Homepage</Link>
           <Link to="/menu" className={`header-button-menu ${location.pathname === "/menu" ? "active-header" : ""}`} onClick={() => setLinkClicked((prev) => (!prev))}>Menu</Link>
           <Link to="/location" className={`header-button ${location.pathname === "/location" ? "active-header" : ""}`} onClick={() => setLinkClicked((prev) => (!prev))}>Location</Link>
           <Link to="/about-us" className={`header-button ${location.pathname === "/about-us" ? "active-header" : ""}`} onClick={() => setLinkClicked((prev) => (!prev))}>About Us</Link>
+          <LogoButton setLinkClicked={setLinkClicked} className="header-logo-big-screen"/>
         </div>
         {/* <Link to="/contact-us" className={`header-button ${location.pathname === "/contact-us" ? "active-header" : ""}`}>Contact Us</Link> */}
       </div>

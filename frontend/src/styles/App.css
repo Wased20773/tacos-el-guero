@@ -5,6 +5,14 @@
     grid-template-columns: minmax(0, 1fr);
 }
 
+.homepage-divider-for-footer {
+    background-image: url('../assets/imgs/homepage-divider-orange-footer.png');
+    background-repeat: repeat-x;
+    height: 200px;
+    width: 100%;
+    background-color: black;
+}
+
 .homepage-container {
     display: flex;
     flex-direction: column;
@@ -18,7 +26,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 35px;
+    /* margin-top: 35px; */
 }
 
 .footer-content {

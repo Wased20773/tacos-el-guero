@@ -31,6 +31,10 @@
     font-weight: bold;
 }
 
+.menu-h3.orders {
+    width: 1000px;
+}
+
 .menu-price {
     display: flex;
     justify-content: space-between;
@@ -41,8 +45,36 @@
 }
 
 .menu-order-numbers-container {
-    width: 1000px;
+    width: 100%;
+}
+
+.menu-order-art-top {
+    background-image: url('../assets/imgs/menu-order-art-top.png');
+    height: 500px;
+    width: 300px;
+}
+
+.menu-order-background-graphic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('../assets/imgs/menu-graphic-orders.png');
+    height: 200px;
+    width: 100%;
+    /* padding-top: 100px; */
     margin-top: 40px;
+}
+
+.menu-order-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    /* border-radius: 10rem 10rem 0 0; */
+
+    /* padding-top: 100px; */
 }
 
 .menu-order-numbers-inner-container {
@@ -52,6 +84,7 @@
     justify-content: space-evenly;
 
     gap: 50px;
+    width: 1000px;
 }
 
 .menu-order-card {
@@ -178,11 +211,14 @@
         width: 550px;
     }
     .menu-order-numbers-container {
-        width: 80%;
-        margin-top: 40px;
+        /* width: 80%; */
     }
     .menu-order-numbers-inner-container {
+        width: 80%;
         gap: 30px;
+    }
+    .menu-h3.orders {
+        width: 80%;
     }
     .menu-order-card {
         width: 30%;
@@ -206,11 +242,15 @@
         width: 450px;
     }
     .menu-order-numbers-container {
-        width: 80%;
-        margin-top: 40px;
+
+        /* margin-top: 40px; */
     }
     .menu-order-numbers-inner-container {
+        width: 80%;
         gap: 10px;
+    }
+    .menu-h3.orders {
+        width: 80%;
     }
     .menu-order-card {
         width: 45%;
@@ -235,11 +275,15 @@
         width: 90%;
     }
     .menu-order-numbers-container {
-        width: 80%;
-        margin-top: 40px;
+        /* width: 80%; */
+        /* margin-top: 40px; */
     }
     .menu-order-numbers-inner-container {
+        width: 80%;
         gap: 5px;
+    }
+    .menu-h3.orders {
+        width: 80%;
     }
     .menu-order-card {
         width: 95%;
