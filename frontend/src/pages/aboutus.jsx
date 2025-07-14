@@ -72,71 +72,76 @@ function AboutUs() {
         <div className="about-me-content-seperator">...</div>
 
         {/* What was it like before 2016 - 2025 */}
-        <div className="about-me-history-carousel-container">
-          <div
-            className="carousel-left-button"
-            onClick={() => {
-              setCarouselIndex(
-                (prev) => (prev - 1 + CardCarousel.length) % CardCarousel.length
-              );
-            }}
-          >
-            <div className="left-button"></div>
-          </div>
-          <div className="about-me-history-carousel-images">
+        <div className="about-me-history-background-container">
+          <div className="about-me-history-carrot"></div>
+          <div className="about-me-history-section-name">Our History</div>
+          <div className="about-me-history-carousel-container">
             <div
-              className="carousel-image-strip"
-              style={{ transform: `translateX(-${carouselIndex * 100}%)` }}
+              className="carousel-left-button"
+              onClick={() => {
+                setCarouselIndex(
+                  (prev) => (prev - 1 + CardCarousel.length) % CardCarousel.length
+                );
+              }}
             >
-              {CardCarousel.map((slide, index) => (
-                <img
-                  key={index}
-                  className="carousel-image"
-                  src={slide.img}
-                  alt={`carousel image ${index}`}
-                  width={"900"}
-                  height={"500"}
-                />
-              ))}
+              <div className="left-button"></div>
             </div>
-          </div>
-          <div className="about-me-history-cover"></div>
-          <div className="about-me-history-text-wrapper">
-            <div
-              className="about-me-history-text-strip"
-              style={{ transform: `translateX(-${carouselIndex * 100}%)` }}
-            >
-              {CardCarousel.map((slide, index) => (
-                <div key={index} className="about-me-history-text-container">
-                  <div className="about-me-history-text-h2">{slide.h2}</div>
-                  {/* Might remove text, its doing to much */}
-                  {/* <div className="about-me-history-text">{slide.text}</div> */}
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div
-            className="carousel-right-button"
-            onClick={() => {
-              setCarouselIndex((prev) => (prev + 1) % CardCarousel.length);
-            }}
-          >
-            <div className="right-button"></div>
-          </div>
-
-          <div className="about-me-image-index-group">
-            {CardCarousel.map((_, index) => (
+            <div className="about-me-history-carousel-images">
               <div
-                key={index}
-                className={`about-me-image-index-dot ${
-                  carouselIndex === index ? "active" : ""
-                }`}
-                onClick={() => setCarouselIndex(index)}
-              ></div>
-            ))}
+                className="carousel-image-strip"
+                style={{ transform: `translateX(-${carouselIndex * 100}%)` }}
+              >
+                {CardCarousel.map((slide, index) => (
+                  <img
+                    key={index}
+                    className="carousel-image"
+                    src={slide.img}
+                    alt={`carousel image ${index}`}
+                    width={"900"}
+                    height={"500"}
+                  />
+                ))}
+              </div>
+            </div>
+            <div className="about-me-history-cover"></div>
+            <div className="about-me-history-text-wrapper">
+              <div
+                className="about-me-history-text-strip"
+                style={{ transform: `translateX(-${carouselIndex * 100}%)` }}
+              >
+                {CardCarousel.map((slide, index) => (
+                  <div key={index} className="about-me-history-text-container">
+                    <div className="about-me-history-text-h2">{slide.h2}</div>
+                    {/* Might remove text, its doing to much */}
+                    {/* <div className="about-me-history-text">{slide.text}</div> */}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div
+              className="carousel-right-button"
+              onClick={() => {
+                setCarouselIndex((prev) => (prev + 1) % CardCarousel.length);
+              }}
+            >
+              <div className="right-button"></div>
+            </div>
+
+            <div className="about-me-image-index-group">
+              {CardCarousel.map((_, index) => (
+                <div
+                  key={index}
+                  className={`about-me-image-index-dot ${
+                    carouselIndex === index ? "active" : ""
+                  }`}
+                  onClick={() => setCarouselIndex(index)}
+                ></div>
+              ))}
+            </div>
           </div>
         </div>
+        <div className='menu-order-background-graphic-flipped'></div>
       </div>
     </>
   );

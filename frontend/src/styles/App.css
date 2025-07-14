@@ -8,9 +8,10 @@
 .homepage-divider-for-footer {
     background-image: url('../assets/imgs/homepage-divider-orange-footer.png');
     background-repeat: repeat-x;
-    height: 200px;
+    height: 100px;
     width: 100%;
     background-color: black;
+    rotate: 180deg;
 }
 
 .homepage-container {

@@ -10,6 +10,7 @@ import OrderSevenJPG from '../assets/imgs/order-seven.JPG'
 import OrderEightJPG from '../assets/imgs/order-eight.JPG'
 import OrderNineJPG from '../assets/imgs/order-nine.JPG'
 import OrderTenJPG from '../assets/imgs/order-ten.JPG'
+import MenuOrderArtTopPNG from '../assets/imgs/menu-order-art-top.png'
 
 const orderCardSize = "300px"
 
@@ -171,8 +172,15 @@ function Menu() {
                         </div>
                     </div>
                 </div>
-                <div className='menu-order-art-top'></div>
-                <div className='menu-order-background-graphic'></div>
+
+                <div className='menu-order-background-graphic'>
+                    <img
+                        src={MenuOrderArtTopPNG}
+                        className='menu-order-art-top'
+                        width={"270px"}
+                        height={"370px"}
+                    />
+                </div>
                 <div className="menu-order-numbers-container">
                     <div className='menu-order-background'>
 
@@ -231,6 +239,7 @@ function Menu() {
                         </div>
                     </div>
                 </div>
+                <div className='menu-order-background-graphic-flipped'></div>
             </div>
         </>
     )

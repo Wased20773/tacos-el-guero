@@ -29,6 +29,31 @@
   margin-bottom: 30px;
 }
 
+.about-me-history-background-container {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding-bottom: 50px;
+  /* height: 00px; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-me-history-carrot {
+  background-color: rgb(246, 180, 114);
+  width: 100px;
+  height: 85px;
+  clip-path: polygon(0 0, 100% 0, 50% 50%, 50% 50%);
+}
+
+.about-me-history-section-name {
+  font-size: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
 .about-me-history-carousel-container {
   border-radius: 0.5cm;
   width: 900px;
@@ -37,6 +62,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
+
 }
 
 .about-me-history-carousel-images {

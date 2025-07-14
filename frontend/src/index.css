@@ -30,7 +30,9 @@ input[type="reset"] {
 }
 
 html {
-  background-color: rgb(247, 184, 122);
+  background-color: rgb(246, 180, 114);
+  /* background-image: url('./assets/imgs/html-background-image.jpg'); */
+  /* background-size: 50%; */
 }
 
 .footer-copyright {

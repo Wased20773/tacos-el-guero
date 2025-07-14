@@ -17,6 +17,7 @@
 }
 
 .menu-price-container {
+    background-color: rgb(247, 216, 187);
     border: 2px solid black;
     border-radius: 0.25cm;
     padding: 20px;
@@ -49,21 +50,28 @@
 }
 
 .menu-order-art-top {
-    background-image: url('../assets/imgs/menu-order-art-top.png');
-    height: 500px;
-    width: 300px;
+    transform: scale(0.35);
+    padding-bottom: 180px;
+    margin-left: auto;
 }
 
 .menu-order-background-graphic {
+    z-index: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     background-image: url('../assets/imgs/menu-graphic-orders.png');
-    height: 200px;
+    background-repeat: repeat-x;
+    height: 100px;
     width: 100%;
-    /* padding-top: 100px; */
-    margin-top: 40px;
+}
+
+.menu-order-background-graphic-flipped {
+    background-image: url('../assets/imgs/menu-graphic-orders.png');
+    background-repeat: repeat-x;
+    height: 100px;
+    width: 100%;
+    rotate: 180deg;
 }
 
 .menu-order-background {
@@ -89,7 +97,8 @@
 
 .menu-order-card {
     width: 300px;
-    height: 300px;
+    /* TODO: Fix heigth for each card (50x50y) */
+    /* height: 300px; */
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
@@ -210,8 +219,11 @@
     .custome-order-container {
         width: 550px;
     }
-    .menu-order-numbers-container {
-        /* width: 80%; */
+    .menu-order-art-top {
+        transform: scale(0.30);
+    }
+    .menu-order-background-graphic {
+        margin-top: 80px;
     }
     .menu-order-numbers-inner-container {
         width: 80%;
@@ -241,9 +253,11 @@
     .custome-order-container {
         width: 450px;
     }
-    .menu-order-numbers-container {
-
-        /* margin-top: 40px; */
+    .menu-order-art-top {
+        transform: scale(0.30);
+    }
+    .menu-order-background-graphic {
+        margin-top: 80px;
     }
     .menu-order-numbers-inner-container {
         width: 80%;
@@ -270,13 +284,11 @@
 
 /* Mobile View (width: 480px <=)*/
 @media(max-width: 480px){
-
     .custome-order-container {
         width: 90%;
     }
-    .menu-order-numbers-container {
-        /* width: 80%; */
-        /* margin-top: 40px; */
+    .menu-order-background-graphic {
+        margin-top: 80px;
     }
     .menu-order-numbers-inner-container {
         width: 80%;
@@ -298,5 +310,8 @@
     }
     .menu-order-card:hover .menu-order-card-background {
         opacity: 0.5;
+    }
+    .menu-order-art-top {
+        margin: 0 auto;
     }
 }
