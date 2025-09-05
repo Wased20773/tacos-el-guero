@@ -20,7 +20,7 @@ const OrderFive = () => {
                     <div>$16.50</div>
                 </div>
                 <div className="menu-price">
-                    <div>Asada Pork</div>
+                    <div>Asada</div>
                     <div>$16.50</div>
                 </div>
                 <div className="menu-price">

@@ -30,7 +30,7 @@ function Menu() {
                             <div>$2.50</div>
                         </div>
                         <div className="menu-price">
-                            <div>Asada Pork</div>
+                            <div>Asada</div>
                             <div>$2.50</div>
                         </div>
                         <div className="menu-price">

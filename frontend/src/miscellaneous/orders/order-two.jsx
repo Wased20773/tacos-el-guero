@@ -20,7 +20,7 @@ const OrderTwo = () => {
                     <div>$9.00</div>
                 </div>
                 <div className="menu-price">
-                    <div>Asada Pork</div>
+                    <div>Asada</div>
                     <div>$9.00</div>
                 </div>
                 <div className="menu-price">
