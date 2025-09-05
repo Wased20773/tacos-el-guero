@@ -36,7 +36,7 @@ function AboutUs() {
         <div>About Us</div>
 
         {/* About Chef*/}
-        <div className="about-me-card">
+        <div className="about-me-card left">
           <img
             className="about-me-image-left"
             src={ChefPhotopng}

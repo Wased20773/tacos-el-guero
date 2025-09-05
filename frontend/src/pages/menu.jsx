@@ -59,8 +59,9 @@ function Menu() {
                         </div>
                     </div>
 
+                    <div className="menu-h2">Our Toppings</div>
                     <div className="menu-price-container">
-                        <div className="menu-h3">Toppings (Each Tacos)</div>
+                        <div className="menu-h3">Each Taco</div>
                         <div className="menu-price">
                             <div>Sour Cream</div>
                             <div>$0.25</div>
@@ -84,7 +85,7 @@ function Menu() {
                     </div>
 
                     <div className="menu-price-container">
-                        <div className="menu-h3">Toppings (Burrito, Quesadilla, Nachos)</div>
+                        <div className="menu-h3">Burrito, Quesadilla, Nachos</div>
                         <div className="menu-price">
                             <div>Avocado</div>
                             <div>$1.00</div>

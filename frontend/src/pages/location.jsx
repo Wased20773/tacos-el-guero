@@ -38,27 +38,27 @@ function Location() {
                         <div className='location-h2'>Opening Hours</div>
                         <div className='location-day'>
                             <div className='location-p'>Monday</div>
-                            <div className='location-p'>11AM - 8:30PM</div>
+                            <div className='location-p'>11AM-8:30PM</div>
                         </div>
                         <div className='location-day'>
                             <div className='location-p'>Tuesday</div>
-                            <div className='location-p'>11AM - 8:30PM</div>
+                            <div className='location-p'>11AM-8:30PM</div>
                         </div>
                         <div className='location-day'>
                             <div className='location-p'>Wednesday</div>
-                            <div className='location-p'>11AM - 8:30PM</div>
+                            <div className='location-p'>11AM-8:30PM</div>
                         </div>
                         <div className='location-day'>
                             <div className='location-p'>Thursday</div>
-                            <div className='location-p'>11AM - 8:30PM</div>
+                            <div className='location-p'>11AM-8:30PM</div>
                         </div>
                         <div className='location-day'>
                             <div className='location-p'>Friday</div>
-                            <div className='location-p'>11AM - 8:30PM</div>
+                            <div className='location-p'>11AM-8:30PM</div>
                         </div>
                         <div className='location-day'>
                             <div className='location-p'>Saturday</div>
-                            <div className='location-p'>11AM - 8:30PM</div>
+                            <div className='location-p'>11AM-8:30PM</div>
                         </div>
                         <div className='location-day'>
                             <div className='location-p'>Sunday</div>

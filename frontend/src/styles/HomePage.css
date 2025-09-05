@@ -13,7 +13,7 @@
 }
 
 .homepage-description-h2 {
-    font-size: 35px;
+    font-size: 30px;
     padding: 0 30px 0 30px;
     font-weight: bold;
 }
@@ -25,7 +25,7 @@
 
 .homepage-description-p {
     font-size: 18px;
-    width: 600px;;
+    width: 600px;
     padding: 10px 30px 20px 30px;
 }
 
@@ -128,7 +128,7 @@
         width: 550px;
     }
     .homepage-description-p {
-        font-size: 17px;
+        font-size: 18px;
         width: 500px;
     }
     .homepage-cards-container {
@@ -140,7 +140,7 @@
         height: 100%;
     }
     .homepage-card-title {
-        font-size: 50px;
+        font-size: 35px;
     }
     .homepage-card:hover {
         transform: none;
@@ -153,13 +153,13 @@
 /* Large Mobile View (width: 481px - 767px) */
 @media(min-width: 481px) and (max-width: 767px) {
     .homepage-description-h2 {
-        font-size: 25px;
+        font-size: 22px;
     }
     .homepage-description-h2-divider {
         width: 450px;
     }
     .homepage-description-p {
-        font-size: 15px;
+        font-size: 16px;
         width: 400px;
     }
     .homepage-cards-container {
@@ -172,7 +172,7 @@
         height: 100%;
     }
     .homepage-card-title {
-        font-size: 20px;
+        font-size: 35px;
     }
     .homepage-card:hover {
         transform: none;
@@ -186,14 +186,14 @@
 /* Mobile View (width: 480px <=)*/
 @media(max-width: 480px){
     .homepage-description-h2 {
-        font-size: 20px;
+        font-size: 22px;
         width: unset;
     }
     .homepage-description-h2-divider {
         width: 80%;
     }
     .homepage-description-p {
-        font-size: 13px;
+        font-size: 16px;
         width: unset;
     }
     .homepage-cards-container {
@@ -215,7 +215,7 @@
         border-radius: 0;
     }
     .homepage-card-title {
-        font-size: 50px;
+        font-size: clamp(1.5rem, 10vw, 3rem);
     }
     .homepage-card:hover {
         transform: none;

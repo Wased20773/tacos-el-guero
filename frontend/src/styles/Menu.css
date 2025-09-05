@@ -43,6 +43,7 @@
     background-color: white;
     border-radius: .25cm;
     padding: 5px 10px;
+    font-size: 18px;
 }
 .menu-price div:last-child {
     margin-left: 10px;
@@ -168,6 +169,7 @@
 .menu-h2-order-description {
     margin-top: -20px;
     text-align: center;
+    font-size: 18px;
 }
 
 .back-button {
@@ -222,6 +224,15 @@
     .custome-order-container {
         width: 550px;
     }
+    .menu-h2 {
+        font-size: 30px;
+    }
+    .menu-h3 {
+        font-size: 25px;
+    }
+    .menu-price {
+        font-size: 18px;
+    }
     .menu-order-art-top {
         transform: scale(0.30);
     }
@@ -248,13 +259,24 @@
     .menu-order-card:hover .menu-order-card-background {
         opacity: 0.5;
     }
-
+    .menu-h2-order-description {
+        font-size: 18px;
+    }
 }
 
 /* Large Mobile View (width: 481px - 767px) */
 @media(min-width: 481px) and (max-width: 767px) {
     .custome-order-container {
         width: 450px;
+    }
+    .menu-h2 {
+        font-size: 25px;
+    }
+    .menu-h3 {
+        font-size: 22px;
+    }
+    .menu-price {
+        font-size: 16px;
     }
     .menu-order-art-top {
         transform: scale(0.30);
@@ -282,6 +304,9 @@
     .menu-order-card:hover .menu-order-card-background {
         opacity: 0.5;
     }
+    .menu-h2-order-description {
+        font-size: 16px;
+    }
 }
 
 
@@ -289,6 +314,15 @@
 @media(max-width: 480px){
     .custome-order-container {
         width: 90%;
+    }
+    .menu-h2 {
+        font-size: 25px;
+    }
+    .menu-h3 {
+        font-size: 22px;
+    }
+    .menu-price {
+        font-size: 16px;
     }
     .menu-order-background-graphic {
         margin-top: 80px;
@@ -316,5 +350,8 @@
     }
     .menu-order-art-top {
         margin: 0 auto;
+    }
+    .menu-h2-order-description {
+        font-size: 16px;
     }
 }

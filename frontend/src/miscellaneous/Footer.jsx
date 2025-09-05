@@ -21,12 +21,12 @@ function Footer() {
                 <div className="footer-day-group">
                   <div>Opening Hours</div>
                   <div className="footer-day footer-p">
-                      <div >Monday - Saturday</div>
-                      <div >11AM - 8:30PM</div>
+                      <div>Monday-Saturday</div>
+                      <div>11AM-8:30PM</div>
                   </div>
                   <div className="footer-day footer-p">
-                      <div >Sunday</div>
-                      <div >Closed</div>
+                      <div>Sunday</div>
+                      <div>Closed</div>
                   </div>
                 </div>
               </div>

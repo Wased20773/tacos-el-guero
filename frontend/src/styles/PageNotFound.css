@@ -41,19 +41,18 @@
 }
 
 .page-not-found-h2 {
-    font-size: 24px;
+    font-size: 25px;
     font-weight: bold;
     /* padding-top: 35px; */
     padding: 35px 35px 0 35px;
 }
 
 .page-not-found-p {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .page-not-found-quick-links {
-    font-size: 16px;
-    /* padding-top: 10px; */
+    font-size: 18px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -101,6 +100,8 @@
     border-radius: 1cm;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     overflow: hidden;
+
+    margin-bottom: 50px;
 }
 
 .page-not-found-p.contact {
@@ -120,7 +121,7 @@
     justify-content: center;
     align-items: center;
     color:rgb(0, 119, 255);
-    font-size: 25px;
+    font-size: 30px;
     transition: 0.5s;
 }
 
@@ -131,12 +132,6 @@
 
 /* Table View (width: 768px - 1089px) */
 @media(min-width: 768px) and (max-width: 1089px) {
-    .page-not-found-p {
-        font-size: 15px;
-    }
-    .page-not-found-quick-links {
-        font-size: 15px;
-    }
     .page-not-found-separator {
         width: 450px;
     }
@@ -162,8 +157,11 @@
 
 /* Large Mobile View (width: 481px - 767px) */
 @media(min-width: 481px) and (max-width: 767px) {
+    .page-not-found-h2 {
+        font-size: 22px;
+    }
     .page-not-found-p {
-        font-size: 14px;
+        font-size: 16px;
     }
     .page-not-found-links-card {
         width: 90%;
@@ -199,6 +197,9 @@
         background-color: rgb(200, 200, 200);
         color: rgb(0, 119, 255);
     }
+    .page-not-found-contact a{
+        font-size: 25px;
+    }
     .page-not-found-contact a:hover {
         background-color: rgb(200, 200, 200);
         color: rgb(0, 119, 255);
@@ -208,8 +209,11 @@
 
 /* Mobile View (width: 480px <=)*/
 @media(max-width: 480px){
+    .page-not-found-h2 {
+        font-size: 22px;
+    }
     .page-not-found-p {
-        font-size: 13px;
+        font-size: 16px;
     }
     .page-not-found-quick-links {
         font-size: 20px;
@@ -251,6 +255,9 @@
     .page-not-found-menu:hover {
         background-color: rgb(200, 200, 200);
         color: rgb(0, 119, 255);
+    }
+    .page-not-found-contact a{
+        font-size: 25px;
     }
     .page-not-found-contact a:hover {
         background-color: rgb(200, 200, 200);

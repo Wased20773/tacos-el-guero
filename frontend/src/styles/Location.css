@@ -7,7 +7,7 @@
 }
 
 .location-p {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .location-p-map {
@@ -48,6 +48,7 @@
     justify-content: space-between;
 }
 
+
 /* Table View (width: 768px - 1089px) */
 @media(min-width: 768px) and (max-width: 1089px) {
     .pin-icon-svg {
@@ -66,17 +67,17 @@
         margin-bottom: 15px;
     }
     .location-p {
-        font-size: 15px;
+        font-size: 18px;
     }
     .location-section {
-        width: 300px;
+        width: 350px;
     }
 }
 
 /* Large Mobile View (width: 481px - 767px) */
 @media(min-width: 481px) and (max-width: 767px) {
     .location-p {
-        font-size: 14px;
+        font-size: 16px;
     }
     .location-section {
         width: 500px;
@@ -102,7 +103,7 @@
         height: 60px;
     }
     .location-p {
-        font-size: 12px;
+        font-size: 16px;
     }
     .location-section {
         width: 100%;
