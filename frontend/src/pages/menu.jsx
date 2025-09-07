@@ -1,20 +1,61 @@
-import { Link } from 'react-router-dom'
+import { useState } from 'react'
 import '../styles/Menu.css'
+
+// Order images
 import OrderOneJPG from '../assets/imgs/order-one.JPG'
 import OrderTwoJPG from '../assets/imgs/order-two.JPG'
 import OrderThreeJPG from '../assets/imgs/order-three.JPG'
 import OrderFourJPG from '../assets/imgs/order-four.JPG'
 import OrderFiveJPG from '../assets/imgs/order-five.JPG'
-// import OrderSixJPG from '../assets/imgs/order-six.JPG'
+import OrderSixJPG from '../assets/imgs/order-six.JPG'
 import OrderSevenJPG from '../assets/imgs/order-seven.JPG'
 import OrderEightJPG from '../assets/imgs/order-eight.JPG'
 import OrderNineJPG from '../assets/imgs/order-nine.JPG'
 import OrderTenJPG from '../assets/imgs/order-ten.JPG'
-import MenuOrderArtTopPNG from '../assets/imgs/menu-order-art-top.png'
+import OrderElevenJPG from '../assets/imgs/order-eleven.JPG'
 
-const orderCardSize = "300px"
+// Order components
+import OrderOne from '../miscellaneous/orders/order-one'
+import OrderTwo from '../miscellaneous/orders/order-two'
+import OrderThree from '../miscellaneous/orders/order-three'
+import OrderFour from '../miscellaneous/orders/order-four'
+import OrderFive from '../miscellaneous/orders/order-five'
+import OrderSix from '../miscellaneous/orders/order-six'
+import OrderSeven from '../miscellaneous/orders/order-seven'
+import OrderEight from '../miscellaneous/orders/order-eight'
+import OrderNine from '../miscellaneous/orders/order-nine'
+import OrderTen from '../miscellaneous/orders/order-ten'
+import OrderEleven from '../miscellaneous/orders/order-eleven'
+
+import MenuOrderArtTopPNG from '../assets/imgs/menu-order-art-top.png'
+import Modal from '../miscellaneous/orders/modal'
 
 function Menu() {
+    const [selectedOrder, setSelectedOrder] = useState(null);
+
+
+
+    // Full list of orders with their respective image, title, and component
+    const orders = [
+        { id: 1, title: "Order 1", img: OrderOneJPG, component: OrderOne },
+        { id: 2, title: "Order 2", img: OrderTwoJPG, component: OrderTwo },
+        { id: 3, title: "Order 3", img: OrderThreeJPG, component: OrderThree },
+        { id: 4, title: "Order 4", img: OrderFourJPG, component: OrderFour },
+        { id: 5, title: "Order 5", img: OrderFiveJPG, component: OrderFive },
+        { id: 6, title: "Order 6", img: OrderSixJPG, component: OrderSix },
+        { id: 7, title: "Order 7", img: OrderSevenJPG, component: OrderSeven },
+        { id: 8, title: "Order 8", img: OrderEightJPG, component: OrderEight },
+        { id: 9, title: "Order 9", img: OrderNineJPG, component: OrderNine },
+        { id: 10, title: "Order 10", img: OrderTenJPG, component: OrderTen },
+        { id: 11, title: "Order 11", img: OrderElevenJPG, component: OrderEleven },
+    ];
+
+    // State to track which order is selected
+    const SelectedOrderComponent = selectedOrder !== null ? orders[selectedOrder - 1]?.component : null;
+
+    // Function to handle opening and closing the modal
+    const openModal = (order) => setSelectedOrder(order);
+    const closeModal = () => setSelectedOrder(null);
     return (
         <>
             <div className="menu-container">
@@ -183,63 +224,38 @@ function Menu() {
                     />
                 </div>
                 <div className="menu-order-numbers-container">
-                    <div className='menu-order-background'>
-
-                        <div className="menu-h3 orders">Order Numbers</div>
-                        <div className='menu-order-numbers-inner-container'>
-                            <Link to="/menu/order-one" className="menu-order-card">
-                                <img src={OrderOneJPG} className="menu-order-card-image"></img>
-                                <div className="menu-order-card-background"></div>
-                                <div className="menu-order-card-title">Order 1</div>
-                            </Link>
-                            <Link to="/menu/order-two" className="menu-order-card">
-                                <img src={OrderTwoJPG} className="menu-order-card-image"></img>
-                                <div className="menu-order-card-background"></div>
-                                <div className="menu-order-card-title">Order 2</div>
-                            </Link>
-                            <Link to="/menu/order-three" className="menu-order-card" >
-                                <img src={OrderThreeJPG} className="menu-order-card-image" ></img>
-                                <div className="menu-order-card-background"></div>
-                                <div className="menu-order-card-title">Order 3</div>
-                            </Link>
-                            <Link to="/menu/order-four" className="menu-order-card">
-                                <img src={OrderFourJPG} className="menu-order-card-image"></img>
-                                <div className="menu-order-card-background"></div>
-                                <div className="menu-order-card-title">Order 4</div>
-                            </Link>
-                            <Link to="/menu/order-five" className="menu-order-card">
-                                <img src={OrderFiveJPG} className="menu-order-card-image"></img>
-                                <div className="menu-order-card-background"></div>
-                                <div className="menu-order-card-title">Order 5</div>
-                            </Link>
-                            <Link to="/menu/order-six" className="menu-order-card">
-                                <img className="menu-order-card-image"></img>
-                                <div className="menu-order-card-background"></div>
-                                <div className="menu-order-card-title">Order 6</div>
-                            </Link>
-                            <Link to="/menu/order-seven" className="menu-order-card">
-                                <img src={OrderSevenJPG} className="menu-order-card-image"></img>
-                                <div className="menu-order-card-background"></div>
-                                <div className="menu-order-card-title">Order 7</div>
-                            </Link>
-                            <Link to="/menu/order-eight" className="menu-order-card">
-                                <img src={OrderEightJPG} className="menu-order-card-image"></img>
-                                <div className="menu-order-card-background"></div>
-                                <div className="menu-order-card-title">Order 8</div>
-                            </Link>
-                            <Link to="/menu/order-nine" className="menu-order-card">
-                                <img src={OrderNineJPG} className="menu-order-card-image"></img>
-                                <div className="menu-order-card-background"></div>
-                                <div className="menu-order-card-title">Order 9</div>
-                            </Link>
-                            <Link to="/menu/order-ten" className="menu-order-card">
-                                <img src={OrderTenJPG} className="menu-order-card-image"></img>
-                                <div className="menu-order-card-background"></div>
-                                <div className="menu-order-card-title">Order 10</div>
-                            </Link>
+                    <div className="menu-order-background">
+                    <div className="menu-h3 orders">Order Numbers</div>
+                    <div className="menu-order-numbers-inner-container">
+                        {orders.map((order) => (
+                        <div
+                            key={order.id}
+                            className="menu-order-card"
+                            onClick={() => openModal(order)}
+                        >
+                            <img
+                            src={order.img}
+                            alt={order.title}
+                            className="menu-order-card-image"
+                            />
+                            <div className="menu-order-card-background"></div>
+                            <div className="menu-order-card-title">{order.title}</div>
                         </div>
+                        ))}
+                    </div>
                     </div>
                 </div>
+
+                {/* Modal when order is clicked */}
+                {selectedOrder && (
+                    <Modal 
+                        closeModal={closeModal}
+                        order={selectedOrder}
+                    >
+                    {SelectedOrderComponent && <SelectedOrderComponent />}
+                    </Modal>
+                )}
+
                 <div className='menu-order-background-graphic-flipped'></div>
             </div>
         </>
@@ -247,4 +263,3 @@ function Menu() {
 }
 
 export default Menu;
-// This is a placeholder for the Menu component.

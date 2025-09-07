@@ -1,58 +1,60 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "../../styles/Menu.css"
+import orderImg from '../../assets/imgs/order-six-top.JPG'
 
 const OrderSix = () => {
     return (
     <div className="order-container">
-        <Link to={"/menu"} className="back-button top">
-            <div className='back-button-arrow'></div>
-        </Link>
+        <div className="custome-order-container modal">
+            <div className="menu-h2">#6 Torta</div>
+            <div className='menu-h2-order-description'>Contains mayonnaise, beans, cheese, onion, cilantro, tomato, avocado, lettuce, and choice of meat</div>
 
-        <div className="custome-order-container">
-            <div className="menu-h2">#6 Quesadilla</div>
-            <div className='menu-h2-order-description'>Contains cheese, onion, cilantro, choice of meat, rice & beans and a can of soda</div>
-
-            <div className="menu-price-container">
-                <div className="menu-h3">Meat</div>
-                <div className="menu-price">
-                    <div>Sausage</div>
-                    <div>$18.50</div>
-                </div>
-                <div className="menu-price">
-                    <div>Asada</div>
-                    <div>$18.50</div>
-                </div>
-                <div className="menu-price">
-                    <div>Chicken</div>
-                    <div>$18.50</div>
-                </div>
-                <div className="menu-price">
-                    <div>Pastor</div>
-                    <div>$18.50</div>
-                </div>
-                <div className="menu-price">
-                    <div>Tripe</div>
-                    <div>$18.50</div>
-                </div>
-                <div className="menu-price">
-                    <div>Crispy Tripe</div>
-                    <div>$20.00</div>
-                </div>
-                <div className="menu-price">
-                    <div>Buche (Pork Stomach)</div>
-                    <div>$19.00</div>
-                </div>
-                <div className="menu-price">
-                    <div>No Meat</div>
-                    <div>$12.75</div>
+            <div className="menu-order-details">
+                <img
+                    src={orderImg}
+                    alt="Order Six - Torta"
+                    className="menu-order-image"
+                    width={"400px"}
+                    height={"325px"}
+                />
+                <div className="menu-modal-order-prices">
+                    <div className="menu-h3">Meat</div>
+                    <div className="menu-price">
+                        <div>Sausage</div>
+                        <div>$13.00</div>
+                    </div>
+                    <div className="menu-price">
+                        <div>Asada</div>
+                        <div>$13.00</div>
+                    </div>
+                    <div className="menu-price">
+                        <div>Chicken</div>
+                        <div>$13.00</div>
+                    </div>
+                    <div className="menu-price">
+                        <div>Pastor</div>
+                        <div>$13.00</div>
+                    </div>
+                    <div className="menu-price">
+                        <div>Tripe</div>
+                        <div>$13.00</div>
+                    </div>
+                    <div className="menu-price">
+                        <div>Crispy Tripe</div>
+                        <div>$14.50</div>
+                    </div>
+                    <div className="menu-price">
+                        <div>Buche (Pork Stomach)</div>
+                        <div>$14.00</div>
+                    </div>
+                    <div className="menu-price">
+                        <div>No Meat</div>
+                        <div>$8.00</div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <Link to={"/menu"} className="back-button bottom">
-            <div className='back-button-arrow'></div>
-        </Link>
     </div>
   )
 }

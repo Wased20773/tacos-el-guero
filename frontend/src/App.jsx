@@ -5,16 +5,7 @@ import './styles/App.css'
 import Header from './miscellaneous/header.jsx'
 import HomePage from './pages/homepage.jsx'
 import Menu from './pages/menu.jsx'
-import OrderOne from './miscellaneous/orders/order-one.jsx'
-import OrderTwo from './miscellaneous/orders/order-two.jsx'
-import OrderThree from './miscellaneous/orders/order-three.jsx'
-import OrderFour from './miscellaneous/orders/order-four.jsx'
-import OrderFive from './miscellaneous/orders/order-five.jsx'
-import OrderSix from './miscellaneous/orders/order-six.jsx'
-import OrderSeven from './miscellaneous/orders/order-seven.jsx'
-import OrderEight from './miscellaneous/orders/order-eight.jsx'
-import OrderNine from './miscellaneous/orders/order-nine.jsx'
-import OrderTen from './miscellaneous/orders/order-ten.jsx'
+
 import Location from './pages/location.jsx'
 import AboutUs from './pages/aboutus.jsx'
 import ContactUs from './pages/contactus.jsx'
@@ -58,16 +49,7 @@ function App() {
         <Route path="/menu" element={<Menu />} />
 
         {/* Menu pages */}
-        <Route path="/menu/order-one" element={<OrderOne />} />
-        <Route path="/menu/order-two" element={<OrderTwo />} />
-        <Route path="/menu/order-three" element={<OrderThree />} />
-        <Route path="/menu/order-four" element={<OrderFour />} />
-        <Route path="/menu/order-five" element={<OrderFive />} />
-        <Route path="/menu/order-six" element={<OrderSix />} />
-        <Route path="/menu/order-seven" element={<OrderSeven />} />
-        <Route path="/menu/order-eight" element={<OrderEight />} />
-        <Route path="/menu/order-nine" element={<OrderNine />} />
-        <Route path="/menu/order-ten" element={<OrderTen />} />
+
 
         <Route path="/location" element={<Location />} />
         <Route path="/about-us" element={<AboutUs />} />

@@ -2,6 +2,11 @@
 
 /* Desktop View (width: 1090px - 1440px) */
 
+.order-container {
+    display: flex;
+    justify-content: center;
+}
+
 .custome-order-container {
     width: 650px;
     display: flex;
@@ -93,7 +98,7 @@
     margin: 50px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 
     gap: 50px;
     width: 1000px;
@@ -101,8 +106,8 @@
 
 .menu-order-card {
     width: 300px;
-    /* TODO: Fix heigth for each card (50x50y) */
-    /* height: 300px; */
+    height: 300px;
+
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
@@ -156,14 +161,13 @@
 
 .menu-order-card:hover {
     transition: 0.5s;
-    
-    transform: scale(1.10);
+    transform: scale(1.15);
     cursor: pointer;
 }
 
 .menu-order-card:hover .menu-order-card-background {
     transition: 0.5s;
-    opacity: 0.70;
+    opacity: 0.25;
 }
 
 .menu-h2-order-description {
@@ -172,51 +176,80 @@
     font-size: 18px;
 }
 
-.back-button {
-    width: 50px;
-    height: 50px;
-
-    text-decoration: none;
+.menu-order-image {
     border-radius: 0.25cm;
-    background-color: white;
+}
 
+.menu-modal-order-prices > div.menu-price {
+    background-color: rgb(246, 180, 114);
+    margin: 10px 0;
+}
+
+.menu-modal-order-prices {
+    width: 100%;
+}
+
+.custome-order-container.modal {
+    width: 800px;
+}
+
+.menu-order-details {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-direction: row;
 
-    transition: 0.5s;
-}
-
-.back-button.top {
-    margin-bottom: 10px;
-}
-
-.back-button.bottom {
-    margin-top: 10px;
-}
-
-.back-button-arrow {
-    width: 35%;
-    height: 45%;
-    background-color: red;
-
-    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0 50%);
-
-    transition: 0.5s;
-}
-
-.back-button:hover .back-button-arrow {
-    transition: 0.5s;
-    transform: scale(1.5);
-}
-
-.back-button:hover {
-    transition: 0.5s;
-    background-color: rgb(218, 218, 218);
+    gap: 15px;
 }
 
 .menu-drinks-header {
     margin-top: 15px;
+}
+
+.menu-order-modal {
+    transition: opacity 0.3s ease-in-out;
+
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 0.15cm;
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-order-modal.fade-in {
+    opacity: 1;
+}
+.menu-order-modal.fade-out {
+    opacity: 0;
+}
+
+.menu-order-modal-panel {
+    position: relative;
+    background-color: white;
+    border-radius: 0.15cm;
+    width: 900px;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.order-container {
+    padding: 25px 0;
+}
+
+.menu-order-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
 }
 
 /* Table View (width: 768px - 1089px) */

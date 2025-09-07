@@ -1,19 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "../../styles/Menu.css"
-import orderImg from '../../assets/imgs/order-ten-top.JPG'
+import orderImg from '../../assets/imgs/order-eleven-top.JPG'
 
-const OrderTen = () => {
+const OrderEleven = () => {
     return (
     <div className="order-container">
         <div className="custome-order-container modal">
-            <div className="menu-h2">#10 Sopes</div>
+            <div className="menu-h2">#11 Chavindeca</div>
             <div className='menu-h2-order-description'>with beans, cheese, sour cream, lettuce, onion, cilantro, and choice of meat</div>
 
             <div className='menu-order-details'>
                 <img
                     src={orderImg}
-                    alt="Order Ten - Sopes"
+                    alt="Order Eleven - Chavindeca"
                     className="menu-order-image"
                     width={"400px"}
                     height={"325px"}
@@ -59,4 +59,4 @@ const OrderTen = () => {
   )
 }
 
-export default OrderTen
+export default OrderEleven
