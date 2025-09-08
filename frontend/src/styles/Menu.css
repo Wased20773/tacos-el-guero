@@ -23,12 +23,13 @@
 
 .menu-price-container {
     background-color: rgb(247, 216, 187);
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    box-shadow: 0 0 10px 3px rgba(0,0,0,0.25);
     border-radius: 0.25cm;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 5px;
 }
 
 .menu-h3 {
@@ -95,7 +96,7 @@
 }
 
 .menu-order-numbers-inner-container {
-    margin: 50px 0;
+    margin: 25px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -113,6 +114,8 @@
     grid-template-columns: 1fr;
 
     border-radius: 0.25cm;
+    /* box-shadow: 0 0 5px 5px silver; */
+    box-shadow: 0 0 10px 3px rgba(0,0,0,0.25);
     text-decoration: none;
     margin: none;
     padding: none;
@@ -123,6 +126,7 @@
 }
 
 .menu-order-card-image {
+    
     width: 100%;
     height: 100%;
     grid-area: 1/1;
@@ -132,9 +136,11 @@
 }
 
 .menu-order-card-background {
+
     grid-area: 1/1;
     z-index: 2;
 
+    /* border: 5px solid rgb(255, 255, 255); */
     background-color: black;
     opacity: 0.5;
     border-radius: 0.25cm;
@@ -163,11 +169,13 @@
     transition: 0.5s;
     transform: scale(1.15);
     cursor: pointer;
+    box-shadow: 0 0 5px 5px white;
 }
 
 .menu-order-card:hover .menu-order-card-background {
     transition: 0.5s;
     opacity: 0.25;
+    border: 0px solid white;
 }
 
 .menu-h2-order-description {
@@ -182,11 +190,15 @@
 
 .menu-modal-order-prices > div.menu-price {
     background-color: rgb(246, 180, 114);
-    margin: 10px 0;
+    /* margin: 10px 0; */
+
 }
 
 .menu-modal-order-prices {
     width: 100%;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
 }
 
 .custome-order-container.modal {
@@ -239,10 +251,11 @@
     width: 900px;
     max-height: 100vh;
     overflow-y: auto;
+    margin: 50px;
 }
 
 .order-container {
-    padding: 25px 0;
+    padding: 25px;
 }
 
 .menu-order-modal-close {
@@ -280,20 +293,29 @@
         width: 80%;
     }
     .menu-order-card {
-        width: 30%;
-        height: 100%;
+        width: 250px;
+        height: 250px;
     }
     .menu-order-card-title {
         font-size: 35px;
     }
     .menu-order-card:hover {
         transform: scale(1.0);
+        /* box-shadow: 0 0 5px 5px silver; */
     }
     .menu-order-card:hover .menu-order-card-background {
         opacity: 0.5;
+        /* border: 5px solid white; */
     }
     .menu-h2-order-description {
         font-size: 18px;
+    }
+    .menu-order-modal-panel {
+        width: 700px;
+    }
+    .menu-order-details > .menu-order-image {
+        width: 350px;
+        height: auto;
     }
 }
 
@@ -325,20 +347,31 @@
         width: 80%;
     }
     .menu-order-card {
-        width: 45%;
-        height: 100%;
+        width: 180px;
+        height: 180px;
     }
     .menu-order-card-title {
         font-size: 25px;
     }
     .menu-order-card:hover {
         transform: scale(1.0);
+        /* box-shadow: 0 0 5px 5px silver */
     }
     .menu-order-card:hover .menu-order-card-background {
         opacity: 0.5;
+        /* border: 5px solid silver; */
     }
     .menu-h2-order-description {
         font-size: 16px;
+    }
+    .menu-order-details {
+        flex-direction: column;
+        gap: 0;
+    }
+    .menu-order-details > .menu-order-image {
+        width: 70%;
+        max-width: 600px;
+        height: auto;
     }
 }
 
@@ -377,14 +410,29 @@
     }
     .menu-order-card:hover {
         transform: scale(1.0);
+        /* box-shadow: 0 0 5px 5px silver; */
     }
     .menu-order-card:hover .menu-order-card-background {
         opacity: 0.5;
+        /* border: 5px solid white; */
     }
     .menu-order-art-top {
         margin: 0 auto;
     }
     .menu-h2-order-description {
         font-size: 16px;
+    }
+    .menu-order-details {
+        flex-direction: column;
+        gap: 0;
+    }
+    .menu-order-modal-panel {
+        /* width: 90%; */
+        margin: 10px;
+    }
+    .menu-order-details > .menu-order-image {
+        width: 80%;
+        max-width: 600px;
+        height: auto;
     }
 }

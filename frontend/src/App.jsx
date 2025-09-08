@@ -59,6 +59,8 @@ function App() {
       </Routes>
 
       {/* Currently fixes page to keep footer at bottom */}
+      <div></div>
+
       <div className="homepage-divider-for-footer"></div>
       <Footer />
 

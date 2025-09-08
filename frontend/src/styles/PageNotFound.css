@@ -167,7 +167,7 @@
         width: 90%;
     }
     .page-not-found-quick-links {
-        font-size: 20px;
+        font-size: 16px;
         gap: 20px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -175,7 +175,7 @@
         justify-items: center;
     }
     .page-not-found-quick-links a {
-        height: 100px;
+        height: 50px;
         width: 100%;
         padding: unset;
         gap: unset;
@@ -216,7 +216,7 @@
         font-size: 16px;
     }
     .page-not-found-quick-links {
-        font-size: 20px;
+        font-size: 16px;
         gap: 10px;
         flex-direction: column;
         width: inherit;
@@ -224,7 +224,7 @@
         
     }
     .page-not-found-quick-links a {
-        height: 100px;
+        height: 50px;
         width: 100%;
         padding: unset;
         display: flex;
