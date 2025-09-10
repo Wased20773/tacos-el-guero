@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react'
 import CloseButton from '../icons/CloseButton'
 
-const Modal = ({ closeModal, order }) => {
-    if (!order) return null
+const Modal = ({ closeModal, item }) => {
+    if (!item) return null
 
     const [fadeClass, setFadeClass] = useState("fade-out")
     const [isClosing, setIsClosing] = useState(false);
@@ -21,12 +21,14 @@ const Modal = ({ closeModal, order }) => {
         return () => setFadeClass("")
     }, [])
 
-    const OrderComponent = order.component
+    const OrderComponent = item.component
 
+    console.log(item)
+    
     return (
     <div className={`menu-order-modal ${fadeClass}`}>
         <div className='menu-order-modal-panel'>
-            <OrderComponent />
+            <OrderComponent item={item}/>
             <div 
                 className='menu-order-modal-close'
                 onClick={handleClose}

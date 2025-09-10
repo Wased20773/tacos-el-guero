@@ -27,13 +27,14 @@ import OrderNine from '../miscellaneous/orders/order-nine'
 import OrderTen from '../miscellaneous/orders/order-ten'
 import OrderEleven from '../miscellaneous/orders/order-eleven'
 
+// Drink component
+import DrinkComp from '../miscellaneous/drinks/drinkComp'
+
 import MenuOrderArtTopPNG from '../assets/imgs/menu-order-art-top.png'
 import Modal from '../miscellaneous/orders/modal'
 
 function Menu() {
-    const [selectedOrder, setSelectedOrder] = useState(null);
-
-
+    const [selectedItem, setSelectedItem] = useState(null);
 
     // Full list of orders with their respective image, title, and component
     const orders = [
@@ -50,12 +51,33 @@ function Menu() {
         { id: 11, title: "Order 11", img: OrderElevenJPG, component: OrderEleven },
     ];
 
-    // State to track which order is selected
-    const SelectedOrderComponent = selectedOrder !== null ? orders[selectedOrder - 1]?.component : null;
+    // Full list of drinks with their respective image, name, price, description, and component
+    const cans = [
+        {id: 12, name: "Coke", img: OrderOneJPG, price: "$2.00", description: "Coca-Cola can, crispy refreshing original taste.", component: DrinkComp },
+        {id: 13, name: "Fanta", img: OrderOneJPG, price: "$2.00", description: "crisp orange soda can, natural flavors.", component: DrinkComp },
+        {id: 14, name: "Sprite", img: OrderOneJPG, price: "$2.00", description: "cool and crisp lemon-lime soda can, natural flavors.", component: DrinkComp },
+        {id: 15, name: "Mountain Dew", img: OrderOneJPG, price: "$2.00", description: "Sweet lemon flavor, contains caffeine.", component: DrinkComp },
+        {id: 16, name: "Pepsi", img: OrderOneJPG, price: "$2.00", description: "classic pepsi can, contains caffeine.", component: DrinkComp },
+        {id: 17, name: "Diet Coke", img: OrderOneJPG, price: "$2.00", description: "sugar free, no calorie Coca-Cola can, ", component: DrinkComp },
+    ];
+
+    const bottles = [
+        {id: 18, name: "Coke", img: OrderOneJPG, price: "$5.00", description: "Classic Coca-Cola in a bottle.", component: DrinkComp },
+        {id: 19, name: "Mandarin", img: OrderOneJPG, price: "$4.00", description: "Sweet citrusy mandarin orange, natural sugar.", component: DrinkComp },
+        {id: 20, name: "Tamarindo", img: OrderOneJPG, price: "$4.00", description: "A sweet tamarind soda, naturaly flavored.", component: DrinkComp },
+        {id: 21, name: "Pineapple", img: OrderOneJPG, price: "$4.00", description: "Refreshing pineapple soda, sweet refreshing flavors.", component: DrinkComp },
+        {id: 22, name: "Apple", img: OrderOneJPG, price: "$4.00", description: "Crisp and light fizzy apple soda.", component: DrinkComp },
+        {id: 23, name: "Sangria", img: OrderOneJPG, price: "$4.00", description: "Citric fresh grape soda, mocking the traditional alcoholic Mexican sangria-flavor, non-alcoholic.", component: DrinkComp },
+    ];
+
+    const aguaFrescas = [
+        {id: 24, name: "Horchata", img: OrderOneJPG, price: "$4.00", description: "Sweet rice drink with cinnamon and vanilla.", component: DrinkComp },
+        {id: 25, name: "Jamaica", img: OrderOneJPG, price: "$4.00", description: "Hibiscus tea with a tart, refreshing flavor.", component: DrinkComp },
+    ];
 
     // Function to handle opening and closing the modal
-    const openModal = (order) => setSelectedOrder(order);
-    const closeModal = () => setSelectedOrder(null);
+    const openModal = (item) => setSelectedItem(item);
+    const closeModal = () => setSelectedItem(null);
     return (
         <>
             <div className="menu-container">
@@ -158,60 +180,76 @@ function Menu() {
                     </div>
                 </div>
 
-                <div className="custome-order-container">
+                <div className="custome-order-container drinks">
                     <div className="menu-h2 menu-drinks-header">Drinks</div>
-
-                    <div className="menu-price-container">
-                        <div className="menu-h3">Cans</div>
-                        <div className="menu-price">
-                            <div>Coke</div>
-                            <div>$2.00</div>
-                        </div>
-                        <div className="menu-price">
-                            <div>Fanta</div>
-                            <div>$2.00</div>
-                        </div>
-                        <div className="menu-price">
-                            <div>Sprite</div>
-                            <div>$2.00</div>
-                        </div>
-                        <div className="menu-price">
-                            <div>Moutain Dew</div>
-                            <div>$2.00</div>
-                        </div>
-                        <div className="menu-price">
-                            <div>Pepsi</div>
-                            <div>$2.00</div>
-                        </div>
-                        <div className="menu-price">
-                            <div>Diet Coke</div>
-                            <div>$2.00</div>
-                        </div>
-                        <div className="menu-h3">Bottles</div>
-                        <div className="menu-price">
-                            <div>Coke</div>
-                            <div>$5.00</div>
-                        </div>
-                        <div className="menu-price">
-                            <div>Mandarin</div>
-                            <div>$4.00</div>
-                        </div>
-                        <div className="menu-price">
-                            <div>Tamarind</div>
-                            <div>$4.00</div>
-                        </div>
-                        <div className="menu-price">
-                            <div>Pinapple</div>
-                            <div>$4.00</div>
-                        </div>
-                        <div className="menu-price">
-                            <div>Apple</div>
-                            <div>$4.00</div>
-                        </div>
-                        <div className="menu-price">
-                            <div>Sangria</div>
-                            <div>$4.00</div>
-                        </div>
+                    <div className="menu-h3">Cans (12oz)</div>
+                    <div className="menu-drink-card-container">
+                        {/* Render cans */}
+                        {cans.map((can) => (
+                            <div
+                                key={can.id}
+                                className="menu-drink-card"
+                                onClick={() => openModal(can)}
+                            >
+                                <img
+                                    src={can.img}
+                                    className="menu-drink-card-image"
+                                />
+                                <div className="menu-drink-card-info">
+                                    <div>
+                                        <div className="drink-name">{can.name}</div>
+                                        <div className="drink-description">{can.description}</div>
+                                    </div>
+                                    <div className="drink-price">{can.price}</div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="menu-h3">Bottles (made in Mexico)</div>
+                    <div className="menu-drink-card-container">
+                        {/* Render bottles */}
+                        {bottles.map((bottle) => (
+                            <div
+                                key={bottle.id}
+                                className="menu-drink-card"
+                                onClick={() => openModal(bottle)}
+                            >
+                                <img
+                                    src={bottle.img}
+                                    className="menu-drink-card-image"
+                                />
+                                <div className="menu-drink-card-info">
+                                    <div>
+                                        <div className="drink-name">{bottle.name}</div>
+                                        <div className="drink-description">{bottle.description}</div>
+                                    </div>
+                                    <div className="drink-price">{bottle.price}</div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="menu-h3">Agua Frescas</div>
+                    <div className="menu-drink-card-container">
+                        {/* Render agua frescas */}
+                        {aguaFrescas.map((aguaFresca) => (
+                            <div
+                                key={aguaFresca.id}
+                                className="menu-drink-card"
+                                onClick={() => openModal(aguaFresca)}
+                            >
+                                <img
+                                    src={aguaFresca.img}
+                                    className="menu-drink-card-image"
+                                />
+                                <div className="menu-drink-card-info">
+                                    <div>
+                                        <div className="drink-name">{aguaFresca.name}</div>
+                                    <div className="drink-description">{aguaFresca.description}</div>
+                                    </div>
+                                    <div className="drink-price">{aguaFresca.price}</div>
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
 
@@ -246,14 +284,12 @@ function Menu() {
                     </div>
                 </div>
 
-                {/* Modal when order is clicked */}
-                {selectedOrder && (
+                {/* Modal when item is clicked */}
+                {selectedItem && (
                     <Modal 
                         closeModal={closeModal}
-                        order={selectedOrder}
-                    >
-                    {SelectedOrderComponent && <SelectedOrderComponent />}
-                    </Modal>
+                        item={selectedItem}
+                    />
                 )}
 
                 <div className='menu-order-background-graphic-flipped'></div>
