@@ -13,6 +13,9 @@ import OrderEightJPG from '../assets/imgs/order-eight.JPG'
 import OrderNineJPG from '../assets/imgs/order-nine.JPG'
 import OrderTenJPG from '../assets/imgs/order-ten.JPG'
 import OrderElevenJPG from '../assets/imgs/order-eleven.JPG'
+import enchiladasJPG from '../assets/imgs/enchiladas.JPG'
+import taquitosJPG from '../assets/imgs/taquitos.JPG'
+import tingaJPG from '../assets/imgs/tinga.JPG'
 
 // Order components
 import OrderOne from '../miscellaneous/orders/order-one'
@@ -26,6 +29,26 @@ import OrderEight from '../miscellaneous/orders/order-eight'
 import OrderNine from '../miscellaneous/orders/order-nine'
 import OrderTen from '../miscellaneous/orders/order-ten'
 import OrderEleven from '../miscellaneous/orders/order-eleven'
+import enchiladas from '../miscellaneous/orders/enchiladas'
+import taquitos from '../miscellaneous/orders/taquitos'
+import tinga from '../miscellaneous/orders/tinga'
+
+// Drink images
+import CokeCanPNG from '../assets/imgs/cocacola.png'
+import FantaPNG from '../assets/imgs/fanta.png'
+import SpritePNG from '../assets/imgs/sprite.png'
+import MountainDewPNG from '../assets/imgs/mtndew.png'
+import PepsiPNG from '../assets/imgs/pepsi.png'
+import DietCokePNG from '../assets/imgs/dietcoke.png'
+import CokeBottlePNG from '../assets/imgs/cocacola-bottle.png'
+import MandarinPNG from '../assets/imgs/mandarin.png'
+import TamarindPNG from '../assets/imgs/tamarind.png'
+import PineapplePNG from '../assets/imgs/pineapple.png'
+import SidralPNG from '../assets/imgs/sidral.png'
+import SangriaPNG from '../assets/imgs/sangria.png'
+import WaterPNG from '../assets/imgs/water.png'
+import HorchataPNG from '../assets/imgs/horchata.png'
+import JamaicaPNG from '../assets/imgs/jamaica.png'
 
 // Drink component
 import DrinkComp from '../miscellaneous/drinks/drinkComp'
@@ -49,30 +72,34 @@ function Menu() {
         { id: 9, title: "Order 9", img: OrderNineJPG, component: OrderNine },
         { id: 10, title: "Order 10", img: OrderTenJPG, component: OrderTen },
         { id: 11, title: "Order 11", img: OrderElevenJPG, component: OrderEleven },
+        { id: 12, title: "Order 12", img: enchiladasJPG, component: enchiladas },
+        { id: 13, title: "Order 13", img: taquitosJPG, component: taquitos },
+        { id: 14, title: "Order 14", img: tingaJPG, component: tinga },
     ];
 
     // Full list of drinks with their respective image, name, price, description, and component
     const cans = [
-        {id: 12, name: "Coke", img: OrderOneJPG, price: "$2.00", description: "Coca-Cola can, crispy refreshing original taste.", component: DrinkComp },
-        {id: 13, name: "Fanta", img: OrderOneJPG, price: "$2.00", description: "crisp orange soda can, natural flavors.", component: DrinkComp },
-        {id: 14, name: "Sprite", img: OrderOneJPG, price: "$2.00", description: "cool and crisp lemon-lime soda can, natural flavors.", component: DrinkComp },
-        {id: 15, name: "Mountain Dew", img: OrderOneJPG, price: "$2.00", description: "Sweet lemon flavor, contains caffeine.", component: DrinkComp },
-        {id: 16, name: "Pepsi", img: OrderOneJPG, price: "$2.00", description: "classic pepsi can, contains caffeine.", component: DrinkComp },
-        {id: 17, name: "Diet Coke", img: OrderOneJPG, price: "$2.00", description: "sugar free, no calorie Coca-Cola can, ", component: DrinkComp },
+        {id: 1, name: "Coke", img: CokeCanPNG, price: "$2.00", description: "Coca-Cola can, crispy refreshing original taste.", component: DrinkComp },
+        {id: 2, name: "Fanta", img: FantaPNG, price: "$2.00", description: "Crisp orange soda can, natural flavors.", component: DrinkComp },
+        {id: 3, name: "Sprite", img: SpritePNG, price: "$2.00", description: "Cool and crisp lemon-lime soda can, natural flavors.", component: DrinkComp },
+        {id: 4, name: "Mountain Dew", img: MountainDewPNG, price: "$2.00", description: "Sweet lemon flavor, contains caffeine.", component: DrinkComp },
+        {id: 5, name: "Pepsi", img: PepsiPNG, price: "$2.00", description: "Classic pepsi can, contains caffeine.", component: DrinkComp },
+        {id: 6, name: "Diet Coke", img: DietCokePNG, price: "$2.00", description: "Sugar free, no calorie Coca-Cola can, ", component: DrinkComp },
     ];
 
     const bottles = [
-        {id: 18, name: "Coke", img: OrderOneJPG, price: "$5.00", description: "Classic Coca-Cola in a bottle.", component: DrinkComp },
-        {id: 19, name: "Mandarin", img: OrderOneJPG, price: "$4.00", description: "Sweet citrusy mandarin orange, natural sugar.", component: DrinkComp },
-        {id: 20, name: "Tamarindo", img: OrderOneJPG, price: "$4.00", description: "A sweet tamarind soda, naturaly flavored.", component: DrinkComp },
-        {id: 21, name: "Pineapple", img: OrderOneJPG, price: "$4.00", description: "Refreshing pineapple soda, sweet refreshing flavors.", component: DrinkComp },
-        {id: 22, name: "Apple", img: OrderOneJPG, price: "$4.00", description: "Crisp and light fizzy apple soda.", component: DrinkComp },
-        {id: 23, name: "Sangria", img: OrderOneJPG, price: "$4.00", description: "Citric fresh grape soda, mocking the traditional alcoholic Mexican sangria-flavor, non-alcoholic.", component: DrinkComp },
+        {id: 1, name: "Coca-Cola Mexico", img: CokeBottlePNG, price: "$5.00", description: "Original Coca-Cola taste in a bottle.", component: DrinkComp },
+        {id: 2, name: "Mandarin", img: MandarinPNG, price: "$4.00", description: "Sweet citrusy mandarin orange, natural sugar.", component: DrinkComp },
+        {id: 3, name: "Tamarindo", img: TamarindPNG, price: "$4.00", description: "A sweet tamarind soda, naturaly flavored.", component: DrinkComp },
+        {id: 4, name: "Pineapple", img: PineapplePNG, price: "$4.00", description: "Refreshing pineapple soda, sweet refreshing flavors.", component: DrinkComp },
+        {id: 5, name: "Apple", img: SidralPNG, price: "$4.00", description: "Crisp and light fizzy apple soda.", component: DrinkComp },
+        {id: 6, name: "Sangria", img: SangriaPNG, price: "$4.00", description: "Citric fresh grape soda, mocking the traditional alcoholic Mexican sangria-flavor, non-alcoholic.", component: DrinkComp },
+        {id: 7, name: "Water", img: WaterPNG, price: "$2.00", description: "Kirkland branded purified water.", component: DrinkComp },
     ];
 
     const aguaFrescas = [
-        {id: 24, name: "Horchata", img: OrderOneJPG, price: "$4.00", description: "Sweet rice drink with cinnamon and vanilla.", component: DrinkComp },
-        {id: 25, name: "Jamaica", img: OrderOneJPG, price: "$4.00", description: "Hibiscus tea with a tart, refreshing flavor.", component: DrinkComp },
+        {id: 1, name: "Horchata", img: HorchataPNG, price: "$4.00", description: "Sweet rice drink with cinnamon and vanilla.", component: DrinkComp },
+        {id: 2, name: "Jamaica", img: JamaicaPNG, price: "$4.00", description: "Hibiscus tea with a tart, refreshing flavor.", component: DrinkComp },
     ];
 
     // Function to handle opening and closing the modal
@@ -194,6 +221,7 @@ function Menu() {
                                 <img
                                     src={can.img}
                                     className="menu-drink-card-image"
+                                    alt="image of a can of soda"
                                 />
                                 <div className="menu-drink-card-info">
                                     <div>
@@ -205,7 +233,7 @@ function Menu() {
                             </div>
                         ))}
                     </div>
-                    <div className="menu-h3">Bottles (made in Mexico)</div>
+                    <div className="menu-h3">Bottles (sodas made in Mexico)</div>
                     <div className="menu-drink-card-container">
                         {/* Render bottles */}
                         {bottles.map((bottle) => (
@@ -217,6 +245,7 @@ function Menu() {
                                 <img
                                     src={bottle.img}
                                     className="menu-drink-card-image"
+                                    alt="image of a bottle of soda"
                                 />
                                 <div className="menu-drink-card-info">
                                     <div>
@@ -240,6 +269,7 @@ function Menu() {
                                 <img
                                     src={aguaFresca.img}
                                     className="menu-drink-card-image"
+                                    alt="image of a plastic cup with agua an fresca"
                                 />
                                 <div className="menu-drink-card-info">
                                     <div>
@@ -272,9 +302,9 @@ function Menu() {
                             onClick={() => openModal(order)}
                         >
                             <img
-                            src={order.img}
-                            alt={order.title}
-                            className="menu-order-card-image"
+                                src={order.img}
+                                alt={order.title}
+                                className="menu-order-card-image"
                             />
                             <div className="menu-order-card-background"></div>
                             <div className="menu-order-card-title">{order.title}</div>

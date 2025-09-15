@@ -47,10 +47,6 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/menu" element={<Menu />} />
-
-        {/* Menu pages */}
-
-
         <Route path="/location" element={<Location />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact-us" element={<ContactUs />} />

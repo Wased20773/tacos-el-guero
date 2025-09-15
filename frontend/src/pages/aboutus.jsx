@@ -8,6 +8,7 @@ import ChefAssistantPhotojpg from "../assets/imgs/chef-assistant-template-photo.
 import CardCarouselOnejpg from "../assets/imgs/tacos-el-guero-nine-years-ago.jpg"
 import CardCarouselTwojpg from "../assets/imgs/tacos-el-guero-four-years-ago.jpg"
 import CardCarouselThreejpg from "../assets/imgs/tacos-el-guero-four-years-ago-inside.jpg"
+import CardCarouselFourjpg from "../assets/imgs/tacos-el-guero-removed-home-2025.jpg"
 
 const CardCarousel = [
   {
@@ -24,6 +25,11 @@ const CardCarousel = [
     img: CardCarouselThreejpg,
     h2: "2021",
     text: "Inside view of the built home",
+  },
+  {
+    img: CardCarouselFourjpg,
+    h2: "2025",
+    text: "City law required removal of home",
   },
 ];
 
@@ -46,7 +52,7 @@ function AboutUs() {
             <article className="about-me-article-text">
               My name is Payo, but you can call me el Guero. I started my
               business over 10 years ago. I am passionate about making amazing
-              traditional mexican food the right way. come by my taco truck to
+              traditional Mexican food the right way. Come by my taco truck to
               get a taste of my foods!
             </article>
         </div>
@@ -62,20 +68,20 @@ function AboutUs() {
           />
             <article className="about-me-article-text">
               Hello, my name is Araceli! I am the assistant of el Guero, who is
-              also my husband. I help him work with him everyday I can to
-              support our business. We love making smiles on peoples faces.
-              Seeing new faces makes me and my husband very proud! We invite
-              anyone to come and taste our Mexican food, made with love.
+              also my husband. I always help him with work everyday. We love making
+              smiles on peoples faces. Seeing new faces makes me and my husband very
+              proud! We invite anyone to come and taste our Mexican food, made with love.
             </article>
         </div>
 
         <div className="about-me-content-seperator">...</div>
 
-        {/* What was it like before 2016 - 2025 */}
+        {/* history images */}
         <div className="about-me-history-background-container">
           <div className="about-me-history-carrot"></div>
           <div className="about-me-history-section-name">Our History</div>
           <div className="about-me-history-carousel-container">
+            {/* left button */}
             <div
               className="carousel-left-button"
               onClick={() => {
@@ -86,6 +92,7 @@ function AboutUs() {
             >
               <div className="left-button"></div>
             </div>
+            {/* history image */}
             <div className="about-me-history-carousel-images">
               <div
                 className="carousel-image-strip"
@@ -104,6 +111,7 @@ function AboutUs() {
               </div>
             </div>
             <div className="about-me-history-cover"></div>
+            {/* history text */}
             <div className="about-me-history-text-wrapper">
               <div
                 className="about-me-history-text-strip"
@@ -113,12 +121,12 @@ function AboutUs() {
                   <div key={index} className="about-me-history-text-container">
                     <div className="about-me-history-text-h2">{slide.h2}</div>
                     {/* Might remove text, its doing to much */}
-                    {/* <div className="about-me-history-text">{slide.text}</div> */}
+                    <div className="about-me-history-text">{slide.text}</div>
                   </div>
                 ))}
               </div>
             </div>
-
+            {/* right button */}
             <div
               className="carousel-right-button"
               onClick={() => {
@@ -127,7 +135,7 @@ function AboutUs() {
             >
               <div className="right-button"></div>
             </div>
-
+            {/* index dot */}
             <div className="about-me-image-index-group">
               {CardCarousel.map((_, index) => (
                 <div

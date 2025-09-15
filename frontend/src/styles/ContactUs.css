@@ -111,12 +111,13 @@ label[for="subject"]::after {
     .contact-us-form {
         width: 650px;
     }
-    .contact-us-submit-button:hover {
+    /* Remove below to enable hover effect */
+    /* .contact-us-submit-button:hover {
         background-color: rgb(119, 255, 130);
     }
     .contact-us-reset-button:hover {
         background-color: rgb(255, 87, 87);
-    }
+    } */
 }
 
 /* Large Mobile View (width: 481px - 767px) */
@@ -135,12 +136,13 @@ label[for="subject"]::after {
     .contact-us-form-input-name {
         width: 100%;
     }
-    .contact-us-submit-button:hover {
+    /* Remove below to enable hover effect */
+    /* .contact-us-submit-button:hover {
         background-color: rgb(119, 255, 130);
     }
     .contact-us-reset-button:hover {
         background-color: rgb(255, 87, 87);
-    }
+    } */
 }
 
 /* Mobile View (width: 480px <=)*/
@@ -159,10 +161,11 @@ label[for="subject"]::after {
     .contact-us-form-input-name {
         width: 100%;
     }
-    .contact-us-submit-button:hover {
+    /* Remove below to enable hover effect */
+    /* .contact-us-submit-button:hover {
         background-color: rgb(119, 255, 130);
     }
     .contact-us-reset-button:hover {
         background-color: rgb(255, 87, 87);
-    }
+    } */
 }

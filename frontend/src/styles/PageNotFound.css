@@ -141,7 +141,8 @@
     .page-not-found-contact-card {
         width: 650px;
     }
-    .page-not-found-quick-links a:hover:not(.page-not-found-menu) {
+    /* Remove below to enable hover effect */
+    /* .page-not-found-quick-links a:hover:not(.page-not-found-menu) {
         background-color: rgb(200, 200, 200);
         color: rgb(0, 119, 255);
     }
@@ -152,7 +153,7 @@
     .page-not-found-contact a:hover {
         background-color: rgb(200, 200, 200);
         color: rgb(0, 119, 255);
-    }
+    } */
 }
 
 /* Large Mobile View (width: 481px - 767px) */
@@ -189,21 +190,22 @@
     .page-not-found-contact-card {
         width: 90%;
     }
-    .page-not-found-quick-links a:hover:not(.page-not-found-menu) {
+    .page-not-found-contact a{
+        font-size: 25px;
+    }
+    /* Remove below to enable hover effect */
+    /* .page-not-found-quick-links a:hover:not(.page-not-found-menu) {
         background-color: rgb(200, 200, 200);
         color: rgb(0, 119, 255);
     }
     .page-not-found-menu:hover {
         background-color: rgb(200, 200, 200);
         color: rgb(0, 119, 255);
-    }
-    .page-not-found-contact a{
-        font-size: 25px;
-    }
-    .page-not-found-contact a:hover {
+    } */
+    /* .page-not-found-contact a:hover {
         background-color: rgb(200, 200, 200);
         color: rgb(0, 119, 255);
-    }
+    } */
 }
 
 
@@ -248,7 +250,11 @@
         border-right: unset;
         border-bottom: 5px solid rgba(0, 0, 0, 0.5);
     }
-    .page-not-found-quick-links a:hover:not(.page-not-found-menu) {
+    .page-not-found-contact a{
+        font-size: 25px;
+    }
+    /* Remove below to enable hover effect */
+    /* .page-not-found-quick-links a:hover:not(.page-not-found-menu) {
         background-color: rgb(200, 200, 200);
         color: rgb(0, 119, 255);
     }
@@ -256,11 +262,8 @@
         background-color: rgb(200, 200, 200);
         color: rgb(0, 119, 255);
     }
-    .page-not-found-contact a{
-        font-size: 25px;
-    }
     .page-not-found-contact a:hover {
         background-color: rgb(200, 200, 200);
         color: rgb(0, 119, 255);
-    }
+    } */
 }

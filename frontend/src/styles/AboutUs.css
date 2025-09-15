@@ -133,6 +133,7 @@
 }
 .about-me-history-text {
   font-size: 20px;
+  width: 80%;
   height: 100%;
   margin-bottom: 100px;
   display: flex;
@@ -331,6 +332,7 @@
     font-size: 25px;
   }
   .about-me-history-text {
+    width: 70%;
     font-size: 14px;
     margin-bottom: 90px;
   }
@@ -345,10 +347,7 @@
     width: 40px;
     height: 40px;
   }
-  .carousel-left-button:hover,
-  .carousel-right-button:hover {
-    background-color: white;
-  }
+
   .about-me-image-index-group {
     gap: 15px;
     margin-bottom: 20px;
@@ -357,13 +356,18 @@
     width: 20px;
     height: 20px;
   }
-  .about-me-image-index-dot:hover {
-    background-color: rgb(255, 255, 255);
-  }
   .about-me-image-index-dot.active {
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
   }
+  /* remove below to enable hover effect */
+    /* .carousel-left-button:hover,
+  .carousel-right-button:hover {
+    background-color: white;
+  } */
+  /* .about-me-image-index-dot:hover {
+    background-color: rgb(255, 255, 255);
+  } */
 }
 
 
@@ -420,6 +424,7 @@
     font-size: 25px;
   }
   .about-me-history-text {
+    width: 60%;
     font-size: 12px;
     margin-bottom: 65px;
     padding: 0 60px;
@@ -435,16 +440,17 @@
     width: 30px;
     height: 30px;
   }
-  .carousel-left-button:hover,
+  .about-me-image-index-dot.active {
+    width: 15px;
+    height: 15px;
+  }
+  /* Remove below to enable hover effect */
+  /* .carousel-left-button:hover,
   .carousel-right-button:hover {
     background-color: white;
   }
   .about-me-image-index-dot:hover {
     background-color: rgb(255, 255, 255);
-  }
-  .about-me-image-index-dot.active {
-    width: 30px;
-    height: 30px;
-  }
+  } */
 }
 

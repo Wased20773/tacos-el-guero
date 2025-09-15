@@ -11,7 +11,6 @@ import Locationjpg from '../assets/Location.jpg'
 import AboutUsJPG from '../assets/about-us-image.JPG'
 import ContactUsjpg from '../assets/contact-us-image.jpg'
 
-
 function HomePage() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 480);
 

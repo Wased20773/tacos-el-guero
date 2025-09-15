@@ -78,14 +78,18 @@
     gap: 10px;
     background-color: white;
     overflow: hidden;
+    transition: 0.25s;
 }
 
 .menu-drink-card:hover {
+    transition: 0.25s;
     cursor: pointer;
+    transform: scale(1.05);
 }
 
 .menu-drink-card-image {
     border-radius: 0.70cm 0 0 0.70cm;
+    border-right: 1px solid grey;
 }
 
 .menu-drink-card-info {
@@ -395,11 +399,11 @@
         font-size: 35px;
     }
     .menu-order-card:hover {
-        transform: scale(1.0);
+        transform: scale(1.10);
         /* box-shadow: 0 0 5px 5px silver; */
     }
     .menu-order-card:hover .menu-order-card-background {
-        opacity: 0.5;
+        /* opacity: 0.5; */
         /* border: 5px solid white; */
     }
     .menu-h2-order-description {
@@ -441,6 +445,9 @@
     .menu-modal-drink-text-spacing {
         margin-bottom: 100px;
     }
+    .menu-drink-card:hover {
+        transform: scale(1.075);
+    }
     .menu-modal-drink-image {
         width: 300px;
     }
@@ -459,11 +466,11 @@
         font-size: 25px;
     }
     .menu-order-card:hover {
-        transform: scale(1.0);
+        transform: scale(1.05);
         /* box-shadow: 0 0 5px 5px silver */
     }
     .menu-order-card:hover .menu-order-card-background {
-        opacity: 0.5;
+        /* opacity: 0.5; */
         /* border: 5px solid silver; */
     }
     .menu-h2-order-description {
@@ -501,8 +508,11 @@
     .menu-drink-card {
         height: 100px;
     }
+    .menu-drink-card:hover {
+        transform: scale(1.075);
+    }
     .custome-order-container.drinks {
-        width: 95%;
+        width: 85%;
     }
     .menu-modal-drink-container {
         flex-direction: column;
@@ -517,7 +527,7 @@
     }
     .menu-order-numbers-inner-container {
         width: 80%;
-        gap: 5px;
+        gap: 15px;
     }
     .menu-h3.orders {
         width: 80%;
@@ -531,11 +541,11 @@
         font-size: clamp(1.5rem, 10vw, 3rem);
     }
     .menu-order-card:hover {
-        transform: scale(1.0);
+        transform: scale(1.05);
         /* box-shadow: 0 0 5px 5px silver; */
     }
     .menu-order-card:hover .menu-order-card-background {
-        opacity: 0.5;
+        /* opacity: 0.5; */
         /* border: 5px solid white; */
     }
     .menu-order-art-top {
