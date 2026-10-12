@@ -1,5 +1,6 @@
 .about-me-card {
-  width: 800px;
+  width: 1000px;
+  margin-bottom: 30px;
 
   display: flex;
   align-items: center;
@@ -8,6 +9,7 @@
 }
 
 .about-me-card ~ .right {
+  margin-bottom: 0;
   flex-direction: row-reverse;
 }
 
@@ -62,7 +64,6 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-
 }
 
 .about-me-history-carousel-images {
@@ -224,7 +225,7 @@
 }
 
 /* Table View (width: 768px - 1089px) */
-@media(min-width: 768px) and (max-width: 1089px) {
+@media (min-width: 768px) and (max-width: 1089px) {
   .about-me-card {
     width: 600px;
   }
@@ -284,7 +285,7 @@
 }
 
 /* Large Mobile View (width: 481px - 767px) */
-@media(min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px) {
   .about-me-card {
     width: 90%;
     gap: none;
@@ -361,7 +362,7 @@
     height: 15px;
   }
   /* remove below to enable hover effect */
-    /* .carousel-left-button:hover,
+  /* .carousel-left-button:hover,
   .carousel-right-button:hover {
     background-color: white;
   } */
@@ -370,12 +371,12 @@
   } */
 }
 
-
 /* Mobile View (width: 480px <=)*/
-@media(max-width: 480px){
+@media (max-width: 480px) {
   .about-me-card {
     width: auto;
-    margin: 0 50px;
+    margin-left: 50px;
+    margin-right: 50px;
     gap: 20px;
     flex-direction: column;
   }
@@ -453,4 +454,3 @@
     background-color: rgb(255, 255, 255);
   } */
 }
-

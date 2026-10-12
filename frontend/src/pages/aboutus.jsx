@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "../styles/AboutUs.css";
 
-import ChefPhotopng from "../assets/imgs/chef-template-photo.png"
-import ChefAssistantPhotojpg from "../assets/imgs/chef-assistant-template-photo.jpg"
+import ChefPhotopng from "../assets/imgs/chef-template-photo.png";
+import ChefAssistantPhotojpg from "../assets/imgs/chef-assistant-template-photo.jpg";
 
-import CardCarouselOnejpg from "../assets/imgs/tacos-el-guero-nine-years-ago.jpg"
-import CardCarouselTwojpg from "../assets/imgs/tacos-el-guero-four-years-ago.jpg"
-import CardCarouselThreejpg from "../assets/imgs/tacos-el-guero-four-years-ago-inside.jpg"
-import CardCarouselFourjpg from "../assets/imgs/tacos-el-guero-removed-home-2025.jpg"
+import CardCarouselOnejpg from "../assets/imgs/tacos-el-guero-nine-years-ago.jpg";
+import CardCarouselTwojpg from "../assets/imgs/tacos-el-guero-four-years-ago.jpg";
+import CardCarouselThreejpg from "../assets/imgs/tacos-el-guero-four-years-ago-inside.jpg";
+import CardCarouselFourjpg from "../assets/imgs/tacos-el-guero-removed-home-2025.jpg";
 
 const CardCarousel = [
   {
@@ -43,35 +43,89 @@ function AboutUs() {
 
         {/* About Chef*/}
         <div className="about-me-card left">
-          <img
+          {/* <img
             className="about-me-image-left"
             src={ChefPhotopng}
             alt="chef looking at camera smiling with glass wines infront of shot"
             width={"300px"}
-          />
-            <article className="about-me-article-text">
-              My name is Payo, but you can call me el Guero. I started my
-              business over 10 years ago. I am passionate about making amazing
-              traditional Mexican food the right way. Come by my taco truck to
-              get a taste of my foods!
-            </article>
+          /> */}
+          <article className="about-me-article-text">
+            {/* My name is Payo, but you can call me el Guero. I started my business
+            over 10 years ago. I am passionate about making amazing traditional
+            Mexican food the right way. Come by my taco truck to get a taste of
+            my foods! */}
+            Our story began when we moved from California to Portland, Oregon,
+            to pursue an opportunity offered by our family. They had owned a
+            restaurant serving traditional Mexican food and invited us to follow
+            a similar path. It was a chance to build a new life while sharing
+            the food and traditions that meant so much to us.
+          </article>
+        </div>
+        <div className="about-me-card left">
+          {/* <img
+            className="about-me-image-left"
+            src={ChefPhotopng}
+            alt="chef looking at camera smiling with glass wines infront of shot"
+            width={"300px"}
+          /> */}
+          <article className="about-me-article-text">
+            {/* My name is Payo, but you can call me el Guero. I started my business
+            over 10 years ago. I am passionate about making amazing traditional
+            Mexican food the right way. Come by my taco truck to get a taste of
+            my foods! */}
+            The first few years were challenging as we established ourselves and
+            worked to turn that opportunity into a lasting livelihood. What kept
+            us going was the support of our customers. Seeing familiar faces
+            return and knowing they enjoyed our food gave us the encouragement
+            to keep moving forward.
+          </article>
+        </div>
+        <div className="about-me-card left">
+          {/* <img
+            className="about-me-image-left"
+            src={ChefPhotopng}
+            alt="chef looking at camera smiling with glass wines infront of shot"
+            width={"300px"}
+          /> */}
+          <article className="about-me-article-text">
+            {/* My name is Payo, but you can call me el Guero. I started my business
+            over 10 years ago. I am passionate about making amazing traditional
+            Mexican food the right way. Come by my taco truck to get a taste of
+            my foods! */}
+            Over time, those connections grew into a community. Along with
+            visiting us for everyday meals, customers have come to us for food
+            to share at parties, family gatherings, and special celebrations.
+            Being part of these moments has made our connection with the
+            community even more meaningful. We have also been welcomed and
+            recognized locally, receiving invitations to participate in annual
+            festivals where we share our food, meet new neighbors, and celebrate
+            alongside the community that has supported us. These experiences
+            have helped us build lasting relationships and feel more connected
+            to the place we now call home.
+          </article>
         </div>
 
         {/* About Chef Assistant */}
         <div className="about-me-card right">
-
-          <img
+          {/* <img
             className="about-me-image-right"
             src={ChefAssistantPhotojpg}
             alt="chef assistant looking at camera smiling with her arms holding each other near her chest"
             width={"300px"}
-          />
-            <article className="about-me-article-text">
-              Hello, my name is Araceli! I am the assistant of el Guero, who is
-              also my husband. I always help him with work everyday. We love making
-              smiles on peoples faces. Seeing new faces makes me and my husband very
-              proud! We invite anyone to come and taste our Mexican food, made with love.
-            </article>
+          /> */}
+          <article className="about-me-article-text">
+            {/* Hello, my name is Araceli! I am the assistant of el Guero, who is
+            also my husband. I always help him with work everyday. We love
+            making smiles on peoples faces. Seeing new faces makes me and my
+            husband very proud! We invite anyone to come and taste our Mexican
+            food, made with love. */}
+            Today, we are grateful to everyone who has been part of our journey,
+            from the customers who supported us in the beginning to those
+            visiting for the first time. Your continued support has helped us
+            provide for our family and build a life in Portland. We look forward
+            to welcoming you and sharing the traditional Mexican food that
+            brought us here.
+          </article>
         </div>
 
         <div className="about-me-content-seperator">...</div>
@@ -79,14 +133,15 @@ function AboutUs() {
         {/* history images */}
         <div className="about-me-history-background-container">
           <div className="about-me-history-carrot"></div>
-          <div className="about-me-history-section-name">Our History</div>
+          <div className="about-me-history-section-name">Our Journey</div>
           <div className="about-me-history-carousel-container">
             {/* left button */}
             <div
               className="carousel-left-button"
               onClick={() => {
                 setCarouselIndex(
-                  (prev) => (prev - 1 + CardCarousel.length) % CardCarousel.length
+                  (prev) =>
+                    (prev - 1 + CardCarousel.length) % CardCarousel.length,
                 );
               }}
             >
@@ -149,7 +204,7 @@ function AboutUs() {
             </div>
           </div>
         </div>
-        <div className='menu-order-background-graphic-flipped'></div>
+        <div className="menu-order-background-graphic-flipped"></div>
       </div>
     </>
   );
